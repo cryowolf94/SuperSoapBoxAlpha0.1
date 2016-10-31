@@ -1,0 +1,988 @@
+﻿Log file open, 10/29/16 12:30:44
+LogInit:Display: Running engine for game: prototype1_Racing
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(272868256) SRandInit(272868257).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.120663
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.10.29-11.30.44:301][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.29-11.30.44:301][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.29-11.30.44:325][  0]LogInit: Computer: KIYUMINIKURO
+[2016.10.29-11.30.44:325][  0]LogInit: User: MattDenny
+[2016.10.29-11.30.44:325][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.10.29-11.30.44:325][  0]LogInit: High frequency timer resolution =3.906250 MHz
+[2016.10.29-11.30.44:325][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.10.29-11.30.44:325][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.29-11.30.44:325][  0]LogMemory: Process Physical Memory: 190.60 MB used, 190.60 MB peak
+[2016.10.29-11.30.44:325][  0]LogMemory: Process Virtual Memory: 195.25 MB used, 195.25 MB peak
+[2016.10.29-11.30.44:325][  0]LogMemory: Physical Memory: 4307.65 MB used, 16332.68 MB total
+[2016.10.29-11.30.44:325][  0]LogMemory: Virtual Memory: 553.58 MB used, 134217728.00 MB total
+[2016.10.29-11.30.44:687][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2016.10.29-11.30.45:011][  0]LogD3D11RHI: D3D11 adapters:
+[2016.10.29-11.30.45:420][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2016.10.29-11.30.45:420][  0]LogD3D11RHI:       8145/0/8166 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.10.29-11.30.45:421][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.10.29-11.30.45:421][  0]LogD3D11RHI:       0/0/8166 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.10.29-11.30.45:421][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.10.29-11.30.45:427][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.10.29-11.30.45:427][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2016.10.29-11.30.45:427][  0]LogWindows: EnumDisplayDevices:
+[2016.10.29-11.30.45:427][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2016.10.29-11.30.45:427][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.29-11.30.45:427][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.29-11.30.45:427][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.29-11.30.45:427][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.10.29-11.30.45:427][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2016.10.29-11.30.45:427][  0]LogD3D11RHI:   Driver Version: 375.70 (internal:21.21.13.7570, unified:375.70)
+[2016.10.29-11.30.45:427][  0]LogD3D11RHI:      Driver Date: 10-25-2016
+[2016.10.29-11.30.45:427][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.10.29-11.30.45:810][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.29-11.30.45:859][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 4)
+[2016.10.29-11.30.45:860][  0]LogShaderCompilers: Guid format shader working directory is -38 characters bigger than the processId version (../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Intermediate/Shaders/WorkingDirectory/61360/).
+[2016.10.29-11.30.45:860][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MATTDE~1/AppData/Local/Temp/UnrealShaderWorkingDir/D0F2A5E048636F6C0D2EE28B1AE669E5/'.
+[2016.10.29-11.30.45:860][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.29-11.30.49:851][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.29-11.30.49:858][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.29-11.30.49:866][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.29-11.30.49:873][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.29-11.30.49:880][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.29-11.30.49:888][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.29-11.30.49:894][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.29-11.30.49:899][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.29-11.30.49:905][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.29-11.30.49:911][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.29-11.30.49:916][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.29-11.30.49:928][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.29-11.30.49:928][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.29-11.30.49:929][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.29-11.30.49:991][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.29-11.30.49:996][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.10.29-11.30.50:002][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.29-11.30.50:007][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.29-11.30.50:022][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.29-11.30.50:022][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.29-11.30.50:563][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.29-11.30.51:297][  0]LogDerivedDataCache: Loaded boot cache 0.73s 48MB C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.29-11.30.51:297][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.10.29-11.30.51:297][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.29-11.30.51:297][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.29-11.30.51:297][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.29-11.30.51:297][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.29-11.30.51:369][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.29-11.30.51:380][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Matt Denny/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.29-11.30.57:010][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.29-11.30.57:038][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.10.29-11.30.57:483][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.29-11.30.57:483][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.29-11.30.57:483][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.10.29-11.30.58:717][  0]LogAssetRegistry: FAssetRegistry took 0.0213 seconds to start up
+[2016.10.29-11.30.58:780][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.060031 seconds
+[2016.10.29-11.30.58:783][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.10.29-11.30.58:783][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.10.29-11.30.58:783][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.10.29-11.30.58:791][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.29-11.31.01:380][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.29-11.31.01:380][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.29-11.31.17:549][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.29-11.31.18:046][  0]SourceControl: Info Source control is disabled
+[2016.10.29-11.31.18:052][  0]SourceControl: Info Source control is disabled
+[2016.10.29-11.31.18:060][  0]SourceControl: Info Source control is disabled
+[2016.10.29-11.31.18:069][  0]SourceControl: Info Source control is disabled
+[2016.10.29-11.31.18:257][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2016.10.29-11.31.18:257][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2016.10.29-11.31.18:257][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2016.10.29-11.31.18:468][  0]LogEngine: Initializing Engine...
+[2016.10.29-11.31.18:501][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.29-11.31.18:501][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.29-11.31.18:747][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.29-11.31.18:752][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-11.31.18:764][  0]LogInit: FAudioDevice initialized.
+[2016.10.29-11.31.18:816][  0]LogDerivedDataCache: Saved boot cache 0.05s 48MB C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.29-11.31.18:821][  0]LogInit: Texture streaming: Enabled
+[2016.10.29-11.31.18:938][  0]LogInit: Transaction tracking system initialized
+[2016.10.29-11.31.18:962][  0]BlueprintLog: New page: Editor Load
+[2016.10.29-11.31.19:064][  0]LocalizationService: Info Localization service is disabled
+[2016.10.29-11.31.19:277][  0]LogConsoleResponse:Display: 
+[2016.10.29-11.31.22:010][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.10.29-11.31.22:010][  0]LogCook:Display: Mobile HDR setting 1
+[2016.10.29-11.31.23:247][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/' took 0.02s
+[2016.10.29-11.31.24:459][  0]SourceControl: Info Source control is disabled
+[2016.10.29-11.31.24:459][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.29-11.31.24:635][  0]LightingResults: New page: Lighting Build
+[2016.10.29-11.31.24:638][  0]MapCheck: New page: Map Check
+[2016.10.29-11.31.24:638][  0]LightingResults: New page: Lighting Build
+[2016.10.29-11.31.40:434][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.29-11.31.41:244][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.29-11.31.41:245][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.29-11.31.41:285][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 40.488ms to complete.
+[2016.10.29-11.31.41:285][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 16.826
+[2016.10.29-11.31.41:517][  0]LogCollectionManager: Loaded 0 collections in 0.002302 seconds
+[2016.10.29-11.31.41:555][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Collections/' took 0.01s
+[2016.10.29-11.31.41:555][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/Developers/MattDenny/Collections/' took 0.01s
+[2016.10.29-11.31.41:555][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/Collections/' took 0.01s
+[2016.10.29-11.31.41:555][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.10.29-11.31.41:561][  0]LogContentBrowser: Native class hierarchy populated in 0.0059 seconds. Added 2047 classes and 369 folders.
+[2016.10.29-11.31.41:565][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.10.29-11.31.41:565][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.10.29-11.31.41:565][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.10.29-11.31.41:570][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.10.29-11.31.42:863][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.10.29-11.31.42:867][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.10.29-11.31.42:926][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.10.29-11.31.42:988][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.10.29-11.31.43:013][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.10.29-11.31.43:013][  0]LogLoad: Full Startup: 61.02 seconds (BP compile: 0.24 seconds)
+[2016.10.29-11.31.43:013][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.10.29-11.31.43:013][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.10.29-11.31.43:353][  0]LogOcInput: OculusInput pre-init called
+[2016.10.29-11.31.43:371][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.10.29-11.31.44:083][  0]LogRenderer: Reallocating scene render targets to support 1128x648 (Frame:2).
+[2016.10.29-11.31.44:169][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.10.29-11.31.44:862][  1]LogAssetRegistry: Asset discovery search completed in 46.1663 seconds
+[2016.10.29-11.31.44:862][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.10.29-11.31.44:862][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
+[2016.10.29-11.36.13:664][377]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Coll' in BlueprintGeneratedClass 'REINST_RerightPhaseCol2_C_122' (it may have been removed)
+[2016.10.29-11.36.13:665][377]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Cube' in BlueprintGeneratedClass 'REINST_RerightPhaseCol2_C_122' (it may have been removed)
+[2016.10.29-11.36.13:676][377]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Cube' in BlueprintGeneratedClass 'REINST_MovmentPhaseCol1_C_125' (it may have been removed)
+[2016.10.29-11.36.13:676][377]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_MovmentPhaseCol1_C_125' (it may have been removed)
+[2016.10.29-11.36.14:122][377]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 111 classes and 0 folders.
+[2016.10.29-11.36.39:724][331]LogSavePackage: Save=20.00ms
+[2016.10.29-11.36.39:724][331]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM089B6BD5411DF06B570A80A3FDDB5C9C.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.36.39:727][331]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.36.42:584][550]LogSavePackage: Save=593.43ms
+[2016.10.29-11.36.42:584][550]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvExampleMap74BA3D55428AF323D71ABF8E151F0072.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
+[2016.10.29-11.36.42:606][550]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2016.10.29-11.44.18:676][443]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.10.29-11.44.37:332][670]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.10.29-11.45.00:173][397]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-11.45.00:245][397]BlueprintEditorCompileResults: Info [0858.25] Compile of TutorialGM successful! [in 71 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-11.45.00:910][471]LogSavePackage: Save=19.79ms
+[2016.10.29-11.45.00:910][471]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM3AFB88AE43BBF00FF7FB649E75765FC6.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.45.00:912][471]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.45.06:818][171]LogBlueprint:Warning: Compiler Warning Pasted node  CustomEvent   conflicted with  SpawnSinglePlayer  and was replaced as a Custom Event!
+[2016.10.29-11.45.06:833][171]BlueprintEditorCompileResults:Warning: Warning Pasted node  CustomEvent   conflicted with  SpawnSinglePlayer  and was replaced as a Custom Event!
+[2016.10.29-11.45.38:649][973]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-11.45.38:721][973]BlueprintEditorCompileResults: Info [0896.73] Compile of TutorialGM successful! [in 72 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-11.45.39:364][ 45]LogSavePackage: Save=19.53ms
+[2016.10.29-11.45.39:364][ 45]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM09FA38234FD38AB8AE8392B46F38F566.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.45.39:367][ 45]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.46.42:042][929]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap' took 0.014
+[2016.10.29-11.46.42:043][929]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM] ([1] browsable assets)...
+[2016.10.29-11.46.42:043][929]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM]
+[2016.10.29-11.46.42:070][929]LogSavePackage: Save=19.95ms
+[2016.10.29-11.46.42:070][929]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM_Auto1F7717E524E1A3F5BB6226B83F63394F6.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto1.uasset'
+[2016.10.29-11.46.42:071][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto1.uasset
+[2016.10.29-11.46.42:071][929]LogFileHelpers: Auto-saving content packages took 0.029
+[2016.10.29-11.48.10:657][719]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-11.48.10:778][719]BlueprintEditorCompileResults: Info [1048.79] Compile of TutorialGM successful! [in 121 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-11.48.11:206][764]LogSavePackage: Save=21.40ms
+[2016.10.29-11.48.11:206][764]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM8E4827EE404FCB7225A2EDBA339F9E3E.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.48.11:208][764]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.48.26:578][605]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-11.48.26:654][605]BlueprintEditorCompileResults: Info [1064.66] Compile of TutorialGM successful! [in 74 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-11.48.27:339][681]LogSavePackage: Save=26.71ms
+[2016.10.29-11.48.27:339][681]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMF29A0E024D99A92A83E497B8C8A1A12D.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.48.27:341][681]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.48.50:208][415]LogSavePackage: Save=22.27ms
+[2016.10.29-11.48.50:208][415]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM8734DDD644E4787458ECADBCC287E650.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.48.50:210][415]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.48.56:427][154]LogSavePackage: Save=21.76ms
+[2016.10.29-11.48.56:427][154]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM0B30BFBA473FAD6BDC45B982D8C972C1.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.48.56:429][154]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.51.02:804][627]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-11.51.02:882][627]BlueprintEditorCompileResults: Info [1220.89] Compile of TutorialGM successful! [in 78 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-11.51.03:691][717]LogSavePackage: Save=24.46ms
+[2016.10.29-11.51.03:691][717]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM33D4A7AD4C42DD1E0A5659BE917C79F0.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.51.03:693][717]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.51.17:605][381]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-11.51.17:683][381]BlueprintEditorCompileResults: Info [1235.69] Compile of TutorialGM successful! [in 78 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-11.51.18:184][435]LogSavePackage: Save=24.84ms
+[2016.10.29-11.51.18:184][435]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMB2283A424E274ED7E993B099176D45BF.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.51.18:186][435]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.53.06:508][416]LogSavePackage: Save=26.70ms
+[2016.10.29-11.53.06:508][416]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGME4B6DE084E490C04F7FBB481EEEA5A2F.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-11.53.06:511][416]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-11.53.11:543][ 16]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.29-11.53.11:562][ 16]PIE: New page: PIE session: VehicleAdvExampleMap (29 Oct 2016 12:53:11)
+[2016.10.29-11.53.11:564][ 16]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2016.10.29-11.53.11:601][ 16]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036732s)
+[2016.10.29-11.53.11:601][ 16]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.29-11.53.11:601][ 16]LogPlayLevel: PIE: World Init took: (0.000560s)
+[2016.10.29-11.53.11:601][ 16]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.037510s)
+[2016.10.29-11.53.11:621][ 16]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-11.53.11:630][ 16]LogInit: FAudioDevice initialized.
+[2016.10.29-11.53.11:726][ 16]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2016.10.29-11.53.11:743][ 16]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2016.10.29-12.53.11
+[2016.10.29-11.53.11:745][ 16]LogWorld: Bringing up level for play took: 0.015647
+[2016.10.29-11.53.11:745][ 16]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.29-11.53.11:749][ 16]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2016.10.29-11.53.11:750][ 16]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] VehicleBlueprint
+[2016.10.29-11.53.11:750][ 16]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.139
+[2016.10.29-11.53.57:913][486]LogAIModule: Creating AISystem for world MenuLevel
+[2016.10.29-11.53.57:934][486]Cmd: MAP LOAD FILE="../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/MenuLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.29-11.53.57:934][486]LightingResults: New page: Lighting Build
+[2016.10.29-11.53.57:935][486]LoadErrors: New page: Loading map: MenuLevel.umap
+[2016.10.29-11.53.57:937][486]MapCheck: New page: Map Check
+[2016.10.29-11.53.57:937][486]LightingResults: New page: Lighting Build
+[2016.10.29-11.53.58:000][486]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.29-11.53.58:019][486]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.29-11.53.58:063][486]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 43.53ms to complete.
+[2016.10.29-11.53.58:063][486]LogFileHelpers: Loading map 'MenuLevel' took 0.130
+[2016.10.29-11.53.58:086][487]Cmd: UpdateLandscapeEditorData
+[2016.10.29-11.53.59:801][691]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.29-11.53.59:801][691]PIE: New page: PIE session: MenuLevel (29 Oct 2016 12:53:59)
+[2016.10.29-11.53.59:801][691]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel
+[2016.10.29-11.53.59:801][691]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000379s)
+[2016.10.29-11.53.59:802][691]LogAIModule: Creating AISystem for world MenuLevel
+[2016.10.29-11.53.59:802][691]LogPlayLevel: PIE: World Init took: (0.000365s)
+[2016.10.29-11.53.59:802][691]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/MenuLevel.MenuLevel to /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel (0.000890s)
+[2016.10.29-11.53.59:821][691]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-11.53.59:829][691]LogInit: FAudioDevice initialized.
+[2016.10.29-11.53.59:871][691]LogWorld: Game class is 'MainMneuGM_C'
+[2016.10.29-11.53.59:874][691]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel up for play (max tick rate 0) at 2016.10.29-12.53.59
+[2016.10.29-11.53.59:874][691]LogWorld: Bringing up level for play took: 0.000628
+[2016.10.29-11.53.59:876][691]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel -0.013
+[2016.10.29-11.54.03:998][176]LogNet: Browse: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-11.54.04:004][176]LogLoad: LoadMap: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-11.54.04:020][176]Cmd: MEM
+[2016.10.29-11.54.04:033][176]LogMemory: Platform Memory Stats for Windows
+[2016.10.29-11.54.04:034][176]LogMemory: Process Physical Memory: 1225.32 MB used, 1232.74 MB peak
+[2016.10.29-11.54.04:034][176]LogMemory: Process Virtual Memory: 1863.18 MB used, 2057.65 MB peak
+[2016.10.29-11.54.04:034][176]LogMemory: Physical Memory: 5942.96 MB used, 16332.68 MB total
+[2016.10.29-11.54.04:034][176]LogMemory: Virtual Memory: 2746.60 MB used, 134217728.00 MB total
+[2016.10.29-11.54.04:034][176]LogMemory: 
+[2016.10.29-11.54.04:034][176]Allocator Stats for TBB: (not implemented)
+[2016.10.29-11.54.06:318][176]LogAIModule: Creating AISystem for world TutorialMap
+[2016.10.29-11.54.06:318][176]LogWorld: Game class is 'TutorialGM_C'
+[2016.10.29-11.54.06:361][176]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_TutorialMap.TutorialMap up for play (max tick rate 0) at 2016.10.29-12.54.06
+[2016.10.29-11.54.06:363][176]LogWorld: Bringing up level for play took: 0.042360
+[2016.10.29-11.54.06:363][176]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-11.54.06:388][176]LogLoad: Took 2.383194 seconds to LoadMap(/Game/VehicleAdvBP/Maps/TutorialMap)
+[2016.10.29-11.54.15:555][274]LogBlueprintUserMessages: [MovmentPhaseCol1_662] respawn with text sayuing retrey
+[2016.10.29-11.54.20:838][908]LogBlueprintUserMessages: [MovmentPhaseCol1_662] respawn with text sayuing retrey
+[2016.10.29-11.54.35:591][678]LogBlueprintUserMessages: [TutorialPlayerManager_C_0] set next phase turn on and off col sections
+[2016.10.29-12.12.42:717][448]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-12.12.42:794][448]BlueprintEditorCompileResults: Info [2520.80] Compile of TutorialGM successful! [in 77 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-12.12.44:131][602]LogSavePackage: Save=23.54ms
+[2016.10.29-12.12.44:131][602]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGME3C749D144A5B75E3496388A3A332B36.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-12.12.44:133][602]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-12.13.35:511][712]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-12.13.35:586][712]BlueprintEditorCompileResults: Info [2573.60] Compile of TutorialGM successful! [in 74 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-12.13.36:421][807]LogSavePackage: Save=25.69ms
+[2016.10.29-12.13.36:421][807]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM1AA150C24BF5A50A99637292A3D25163.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-12.13.36:424][807]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-12.15.12:610][100]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/MenuLevel' took 0.016
+[2016.10.29-12.15.12:612][100]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM] ([1] browsable assets)...
+[2016.10.29-12.15.12:612][100]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM]
+[2016.10.29-12.15.12:654][100]LogSavePackage: Save=31.83ms
+[2016.10.29-12.15.12:655][100]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM_Auto246A481DD458DCC57A9D781AD926D0196.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto2.uasset'
+[2016.10.29-12.15.12:655][100]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto2.uasset
+[2016.10.29-12.15.12:655][100]LogFileHelpers: Auto-saving content packages took 0.044
+[2016.10.29-12.23.49:128][731]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-12.23.49:205][731]BlueprintEditorCompileResults: Info [3187.22] Compile of TutorialGM successful! [in 76 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-12.23.49:918][809]LogSavePackage: Save=27.51ms
+[2016.10.29-12.23.49:918][809]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM20A14E694AF92AAA448A0E99140EF100.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-12.23.49:920][809]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-12.25.12:694][725]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/MenuLevel' took 0.014
+[2016.10.29-12.25.12:695][725]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM] ([1] browsable assets)...
+[2016.10.29-12.25.12:695][725]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM]
+[2016.10.29-12.25.12:732][725]LogSavePackage: Save=28.37ms
+[2016.10.29-12.25.12:732][725]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM_Auto3048F083D4EDDFC510FBE4FB5D2B1E88D.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto3.uasset'
+[2016.10.29-12.25.12:770][725]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto3.uasset
+[2016.10.29-12.25.12:770][725]LogFileHelpers: Auto-saving content packages took 0.076
+[2016.10.29-12.25.39:788][967]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-12.25.39:867][967]BlueprintEditorCompileResults: Info [3297.88] Compile of TutorialGM successful! [in 78 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-12.25.40:664][ 56]LogSavePackage: Save=30.27ms
+[2016.10.29-12.25.40:664][ 56]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMB1E44DF94FAC1C2586A5F8830A78F2F3.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-12.25.40:667][ 56]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.26.25:185][181]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.26.25:322][181]BlueprintEditorCompileResults: Info [7744.00] Compile of TutorialGM successful! [in 136 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.26.26:197][274]LogSavePackage: Save=29.12ms
+[2016.10.29-16.26.26:197][274]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMFAE60F76447E8801DFD13AB090C7429C.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.26.26:200][274]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.27.04:366][846]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/MenuLevel' took 0.014
+[2016.10.29-16.27.04:368][846]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM] ([1] browsable assets)...
+[2016.10.29-16.27.04:368][846]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM]
+[2016.10.29-16.27.04:403][846]LogSavePackage: Save=27.85ms
+[2016.10.29-16.27.04:403][846]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM_Auto49BF6012647417976428709B4332D8139.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto4.uasset'
+[2016.10.29-16.27.04:404][846]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM_Auto4.uasset
+[2016.10.29-16.27.04:404][846]LogFileHelpers: Auto-saving content packages took 0.037
+[2016.10.29-16.28.33:811][775]LogSavePackage: Save=28.90ms
+[2016.10.29-16.28.33:811][775]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMB46DE66545BFDAA55C6A90BF55E68670.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.28.33:839][775]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.28.52:125][947]LogSavePackage: Save=27.27ms
+[2016.10.29-16.28.52:125][947]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM7B66573E4B827CAED895A2BD0B82743A.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.28.52:127][947]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.29.42:117][936]LogSavePackage: Save=28.81ms
+[2016.10.29-16.29.42:117][936]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM17BC55F44A22D2D81EA2C38A922DE197.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.29.42:119][936]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.30.48:084][729]0.281443
+[2016.10.29-16.30.48:084][729]0.297924
+[2016.10.29-16.30.48:141][736]0.306363
+[2016.10.29-16.30.48:182][741]0.312500
+[2016.10.29-16.30.48:199][743]0.318859
+[2016.10.29-16.30.48:207][744]0.332192
+[2016.10.29-16.30.48:216][745]0.346892
+[2016.10.29-16.30.48:216][745]0.353860
+[2016.10.29-16.30.48:224][746]0.368579
+[2016.10.29-16.30.48:232][747]0.376300
+[2016.10.29-16.30.48:241][748]0.390451
+[2016.10.29-16.30.48:241][748]0.398020
+[2016.10.29-16.30.48:249][749]0.405180
+[2016.10.29-16.30.48:257][750]0.419909
+[2016.10.29-16.30.48:266][751]0.435137
+[2016.10.29-16.30.48:266][751]0.442187
+[2016.10.29-16.30.48:274][752]0.456911
+[2016.10.29-16.30.48:307][756]0.471635
+[2016.10.29-16.30.48:316][757]0.486359
+[2016.10.29-16.30.48:324][758]0.508713
+[2016.10.29-16.30.48:332][759]0.538150
+[2016.10.29-16.30.48:340][760]0.560568
+[2016.10.29-16.30.48:349][761]0.589992
+[2016.10.29-16.30.48:357][762]0.620295
+[2016.10.29-16.30.48:365][763]0.642886
+[2016.10.29-16.30.48:366][763]0.649686
+[2016.10.29-16.30.48:374][764]0.672258
+[2016.10.29-16.30.48:382][765]0.679084
+[2016.10.29-16.30.48:390][766]0.701638
+[2016.10.29-16.30.48:399][767]0.723190
+[2016.10.29-16.30.48:407][768]0.737894
+[2016.10.29-16.30.48:424][770]0.752600
+[2016.10.29-16.30.48:432][771]0.768295
+[2016.10.29-16.30.48:440][772]0.782984
+[2016.10.29-16.30.48:441][772]0.797675
+[2016.10.29-16.30.48:449][773]0.820275
+[2016.10.29-16.30.48:457][774]0.836258
+[2016.10.29-16.30.48:465][775]0.850921
+[2016.10.29-16.30.48:474][776]0.858980
+[2016.10.29-16.30.48:482][777]0.867090
+[2016.10.29-16.30.48:490][778]0.875248
+[2016.10.29-16.30.48:499][779]0.883454
+[2016.10.29-16.30.48:749][809]0.889878
+[2016.10.29-16.30.48:790][814]0.898071
+[2016.10.29-16.30.48:857][822]0.904512
+[2016.10.29-16.30.48:874][824]0.919149
+[2016.10.29-16.30.48:882][825]0.950146
+[2016.10.29-16.30.48:890][826]0.966676
+[2016.10.29-16.30.48:890][826]0.972997
+[2016.10.29-16.30.48:899][827]0.989583
+[2016.10.29-16.30.48:907][828]1.006328
+[2016.10.29-16.30.48:924][830]1.014757
+[2016.10.29-16.30.48:949][833]1.023222
+[2016.10.29-16.30.48:966][835]1.031723
+[2016.10.29-16.30.48:974][836]1.040259
+[2016.10.29-16.30.49:190][862]1.034349
+[2016.10.29-16.34.42:520][384]LogSavePackage: Save=42.14ms
+[2016.10.29-16.34.42:520][384]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu13E11C694EC4594067839A99248CF051.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.34.42:531][384]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.34.43:292][474]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.34.43:393][474]BlueprintEditorCompileResults: Info [8242.07] Compile of TutorialSubMenu successful! [in 100 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.35.24:587][328]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.10.29-16.35.31:107][102]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.35.31:188][102]BlueprintEditorCompileResults: Info [8289.87] Compile of TutorialGM successful! [in 80 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.35.31:984][189]LogSavePackage: Save=29.07ms
+[2016.10.29-16.35.31:984][189]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM9CDF748842FDE1CA1B2F508334FBAEC7.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.35.32:004][189]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.35.52:545][642]LogSavePackage: Save=28.81ms
+[2016.10.29-16.35.52:545][642]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMF7534E5443A4DF8C01A060834783A105.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.35.52:547][642]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.36.15:451][378]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.36.15:546][378]BlueprintEditorCompileResults: Info [8334.23] Compile of TutorialGM successful! [in 93 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.36.15:996][423]LogSavePackage: Save=32.45ms
+[2016.10.29-16.36.15:996][423]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM08B2AB924DD5ADEB63758389B968B58E.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.36.15:999][423]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.42.36:593][  4]LogBlueprint:Warning: Compiler Warning Pasted node  CustomEvent   conflicted with  Multiplayer  and was replaced as a Custom Event!
+[2016.10.29-16.42.36:615][  4]BlueprintEditorCompileResults:Warning: Warning Pasted node  CustomEvent   conflicted with  Multiplayer  and was replaced as a Custom Event!
+[2016.10.29-16.42.53:410][981]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.42.53:497][981]BlueprintEditorCompileResults: Info [8732.18] Compile of TutorialGM successful! [in 86 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.42.54:125][ 47]LogSavePackage: Save=33.09ms
+[2016.10.29-16.42.54:125][ 47]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM7D3626654E73C536548750985D1E8200.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.42.54:128][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.42.56:106][277]LogBlueprint:Warning: Compiler Warning Pasted node  CustomEvent   conflicted with  single player  and was replaced as a Custom Event!
+[2016.10.29-16.42.56:125][277]BlueprintEditorCompileResults:Warning: Warning Pasted node  CustomEvent   conflicted with  single player  and was replaced as a Custom Event!
+[2016.10.29-16.43.42:881][843]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.43.42:966][843]BlueprintEditorCompileResults: Info [8781.65] Compile of TutorialGM successful! [in 84 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.43.43:627][911]LogSavePackage: Save=53.54ms
+[2016.10.29-16.43.43:627][911]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM8EFA39D24782A9B3EA606DA406FE6B7D.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.43.43:629][911]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.44.10:592][102]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.44.10:700][102]BlueprintEditorCompileResults: Info [8809.38] Compile of TutorialSubMenu successful! [in 107 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.44.11:183][154]LogSavePackage: Save=11.23ms
+[2016.10.29-16.44.11:183][154]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu45BAA99243A3DF784C19C9AE7178200B.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.44.11:185][154]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.44.24:735][764]LogSavePackage: Save=30.01ms
+[2016.10.29-16.44.24:735][764]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM8889F45546DF51A284E853AFD5F14B60.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.44.24:737][764]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.45.09:962][123]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.45.10:057][123]BlueprintEditorCompileResults: Info [8868.74] Compile of TutorialSubMenu successful! [in 95 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.45.10:581][180]LogSavePackage: Save=10.66ms
+[2016.10.29-16.45.10:581][180]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenuDD07CA2D48B85342CA17F0903E22B959.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.45.10:583][180]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.45.31:335][662]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.45.31:433][662]BlueprintEditorCompileResults: Info [8890.11] Compile of TutorialSubMenu successful! [in 98 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.45.31:958][719]LogSavePackage: Save=11.37ms
+[2016.10.29-16.45.31:958][719]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu5AD028A046FE03821EE335988B4B78A4.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.45.31:960][719]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.45.51:505][ 27]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.10.29-16.46.08:008][982]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.46.08:092][982]BlueprintEditorCompileResults: Info [8926.77] Compile of TutorialGM successful! [in 83 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.46.08:506][ 24]LogSavePackage: Save=30.34ms
+[2016.10.29-16.46.08:506][ 24]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM39CD1092476A99C2E6309FA35EEAA386.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.46.08:508][ 24]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.46.37:400][486]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.46.37:491][486]BlueprintEditorCompileResults: Info [8956.17] Compile of TutorialSubMenu successful! [in 91 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.46.37:960][536]LogSavePackage: Save=11.22ms
+[2016.10.29-16.46.37:960][536]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenuE5EA0D314E1AE3BC64FF12BF31872A60.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.46.37:962][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.46.51:315][111]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.46.51:398][111]BlueprintEditorCompileResults: Info [8970.08] Compile of TutorialGM successful! [in 83 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.46.51:790][150]LogSavePackage: Save=30.57ms
+[2016.10.29-16.46.51:790][150]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM765BC2234465FB99E6AB78A8D29AD6D7.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.46.51:791][150]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.47.37:212][407]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/MenuLevel' took 0.016
+[2016.10.29-16.47.37:214][407]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu] ([1] browsable assets)...
+[2016.10.29-16.47.37:214][407]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu]
+[2016.10.29-16.47.37:233][407]LogSavePackage: Save=11.32ms
+[2016.10.29-16.47.37:233][407]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu_Auto5BA6B728A4099250E1BAA169C8EFAF84C.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu_Auto5.uasset'
+[2016.10.29-16.47.37:234][407]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu_Auto5.uasset
+[2016.10.29-16.47.37:234][407]LogFileHelpers: Auto-saving content packages took 0.021
+[2016.10.29-16.48.53:303][696]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.48.53:307][696]LogBlueprint:Warning: Compiler Warning 'GM ref' is already a 'Tutorial GM', you don't need  Cast To TutorialGM .
+[2016.10.29-16.48.53:387][696]LogBlueprint:Warning: Compiler Warning [9092.07] Compile of TutorialSubMenu successful, but with 1 Warning(s) [in 84 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.48.53:387][696]BlueprintEditorCompileResults:Warning: Warning 'GM ref' is already a 'Tutorial GM', you don't need  Cast To TutorialGM .
+[2016.10.29-16.48.53:387][696]BlueprintEditorCompileResults:Warning: Warning [9092.07] Compile of TutorialSubMenu successful, but with 1 Warning(s) [in 84 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.49.23:495][251]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.VehicleAdvGameMode:Init player controller.K2Node_CallFunction_45 or K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu:EventGraph.K2Node_CallFunction_45
+[2016.10.29-16.49.23:495][251]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.VehicleAdvGameMode:Init player controller.K2Node_CallFunction_45 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_45
+[2016.10.29-16.49.23:495][251]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.VehicleAdvGameMode:Init player controller.K2Node_CallFunction_45.EdGraphPin_296) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu:EventGraph.K2Node_DynamicCast_0.EdGraphPin_267).  Import failed...
+[2016.10.29-16.49.23:495][251]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_45.EdGraphPin_296''
+[2016.10.29-16.49.28:904][896]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.49.28:986][896]BlueprintEditorCompileResults: Info [9127.67] Compile of TutorialSubMenu successful! [in 82 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.49.30:495][ 71]LogSavePackage: Save=13.45ms
+[2016.10.29-16.49.30:495][ 71]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu797A99EB43200BAB5E6475A2C0C26975.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.49.30:497][ 71]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.50.02:610][892]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.50.02:686][892]BlueprintEditorCompileResults: Info [9161.37] Compile of TutorialSubMenu successful! [in 75 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.50.03:139][941]LogSavePackage: Save=13.65ms
+[2016.10.29-16.50.03:139][941]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu4CEE5F2E41BA215EBCA0D3BC4D2AA5F4.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.50.03:141][941]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.50.32:696][394]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.50.32:787][394]BlueprintEditorCompileResults: Info [9191.47] Compile of TutorialSubMenu successful! [in 91 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.50.33:254][444]LogSavePackage: Save=15.17ms
+[2016.10.29-16.50.33:254][444]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu84BE027A43284FF1422EDC997DBCA863.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.50.33:256][444]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.52.40:400][613]BlueprintLog: New page: Compile TutorialSubMenu
+[2016.10.29-16.52.40:511][613]BlueprintEditorCompileResults: Info [9319.19] Compile of TutorialSubMenu successful! [in 111 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu)
+[2016.10.29-16.52.40:973][661]LogSavePackage: Save=15.80ms
+[2016.10.29-16.52.40:973][661]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu1A994280425CC99D72A4D4B1C895F9DD.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.52.40:975][661]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.53.18:147][833]LogSavePackage: Save=31.65ms
+[2016.10.29-16.53.18:147][833]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM680741AA49691301B98B70922F7525BE.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.53.18:149][833]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.53.36:415][ 93]LogStats: FPlatformStackWalk::StackWalkAndDump -  1.775 s
+[2016.10.29-16.53.36:415][ 93]LogOutputDevice:Warning: === Handled error: ===
+
+Ensure condition failed: TabBeingDraggedPtr.IsValid() [File:D:\Build\++UE4+Release-4.12+Compile\Sync\Engine\Source\Runtime\Slate\Private\Framework\Docking\SDockingTabWell.cpp] [Line: 374]
+
+Stack: 
+UE4Editor-Core.dll!FWindowsPlatformStackWalk::StackWalkAndDump() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:183]
+UE4Editor-Core.dll!FDebug::EnsureFailed() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\misc\outputdevice.cpp:327]
+UE4Editor-Core.dll!FDebug::OptionallyLogFormattedEnsureMessageReturningFalse() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\misc\outputdevice.cpp:451]
+UE4Editor-Slate.dll!SDockingTabWell::OnDrop() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\slate\private\framework\docking\sdockingtabwell.cpp:374]
+UE4Editor-Slate.dll!<lambda_d21373bc5354aa11b893894bcf47e418>::operator()() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:4630]
+UE4Editor-Slate.dll!FEventRouter::Route<FReply,FEventRouter::FBubblePolicy,FPointerEvent,<lambda_d21373bc5354aa11b893894bcf47e418> >() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:215]
+UE4Editor-Slate.dll!FSlateApplication::RoutePointerUpEvent() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:4621]
+UE4Editor-Slate.dll!FSlateApplication::ProcessMouseButtonUpEvent() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:5041]
+UE4Editor-Slate.dll!FSlateApplication::OnMouseUp() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:5021]
+UE4Editor-Core.dll!FWindowsApplication::ProcessDeferredMessage() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\windows\windowsapplication.cpp:1510]
+UE4Editor-Core.dll!FWindowsApplication::DeferMessage() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\windows\windowsapplication.cpp:1850]
+UE4Editor-Core.dll!FWindowsApplication::ProcessMessage() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\windows\windowsapplication.cpp:745]
+UE4Editor-Core.dll!FWindowsApplication::AppWndProc() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\windows\windowsapplication.cpp:667]
+USER32.dll
+USER32.dll
+UE4Editor-Core.dll!FWindowsPlatformMisc::PumpMessages() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\core\private\windows\windowsplatformmisc.cpp:903]
+UE4Editor.exe!FEngineLoop::Tick() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\launch\private\launchengineloop.cpp:2729]
+UE4Editor.exe!GuardedMain() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\launch\private\launch.cpp:148]
+UE4Editor.exe!GuardedMainWrapper() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\launch\private\windows\launchwindows.cpp:126]
+UE4Editor.exe!WinMain() [d:\build\++ue4+release-4.12+compile\sync\engine\source\runtime\launch\private\windows\launchwindows.cpp:200]
+UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:264]
+KERNEL32.DLL
+ntdll.dll
+ntdll.dll
+
+[2016.10.29-16.53.36:428][ 93]LogStats:                SubmitErrorReport -  0.013 s
+[2016.10.29-16.53.44:181][ 93]LogStats:                    SendNewReport -  7.755 s
+[2016.10.29-16.53.44:181][ 93]LogStats:             FDebug::EnsureFailed -  9.549 s
+[2016.10.29-16.54.44:753][285]LogSavePackage: Save=31.07ms
+[2016.10.29-16.54.44:753][285]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM5CFA53D14B2D8E0F8108388FB5B663D7.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.54.44:755][285]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.54.52:170][151]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu:EventGraph.K2Node_CallFunction_85 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_85
+[2016.10.29-16.54.52:170][151]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu:EventGraph.K2Node_CallFunction_85.EdGraphPin_395) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_VariableSet_0.EdGraphPin_416).  Import failed...
+[2016.10.29-16.54.52:170][151]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_85.EdGraphPin_395''
+[2016.10.29-16.54.52:170][151]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu:EventGraph.K2Node_CallFunction_70 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_70
+[2016.10.29-16.54.52:170][151]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.TutorialSubMenu:EventGraph.K2Node_CallFunction_70.EdGraphPin_366) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_VariableSet_0.EdGraphPin_413).  Import failed...
+[2016.10.29-16.54.52:170][151]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_70.EdGraphPin_366''
+[2016.10.29-16.55.30:471][675]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-16.55.30:576][675]BlueprintEditorCompileResults: Info [9489.26] Compile of TutorialGM successful! [in 105 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-16.55.31:122][732]LogSavePackage: Save=34.68ms
+[2016.10.29-16.55.31:122][732]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM7CF6BDED47120EBC72145B8CBFD2E062.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.55.31:124][732]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.55.38:928][642]LogSavePackage: Save=32.24ms
+[2016.10.29-16.55.38:928][642]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMCEC997D149A77A95C5CA50B3C0B074DE.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.55.38:930][642]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.55.40:595][837]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.29-16.55.40:595][837]PIE: New page: PIE session: MenuLevel (29 Oct 2016 17:55:40)
+[2016.10.29-16.55.40:595][837]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel
+[2016.10.29-16.55.40:595][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000423s)
+[2016.10.29-16.55.40:596][837]LogAIModule: Creating AISystem for world MenuLevel
+[2016.10.29-16.55.40:596][837]LogPlayLevel: PIE: World Init took: (0.000483s)
+[2016.10.29-16.55.40:596][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/MenuLevel.MenuLevel to /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel (0.001119s)
+[2016.10.29-16.55.40:619][837]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-16.55.40:632][837]LogInit: FAudioDevice initialized.
+[2016.10.29-16.55.40:675][837]LogWorld: Game class is 'MainMneuGM_C'
+[2016.10.29-16.55.40:677][837]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel up for play (max tick rate 0) at 2016.10.29-17.55.40
+[2016.10.29-16.55.40:678][837]LogWorld: Bringing up level for play took: 0.000832
+[2016.10.29-16.55.40:680][837]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel -0.538
+[2016.10.29-16.55.43:495][174]LogNet: Browse: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-16.55.43:495][174]LogLoad: LoadMap: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-16.55.43:518][174]Cmd: MEM
+[2016.10.29-16.55.43:532][174]LogMemory: Platform Memory Stats for Windows
+[2016.10.29-16.55.43:532][174]LogMemory: Process Physical Memory: 909.57 MB used, 1685.23 MB peak
+[2016.10.29-16.55.43:532][174]LogMemory: Process Virtual Memory: 2627.64 MB used, 2627.64 MB peak
+[2016.10.29-16.55.43:532][174]LogMemory: Physical Memory: 7870.89 MB used, 16332.68 MB total
+[2016.10.29-16.55.43:532][174]LogMemory: Virtual Memory: 3519.27 MB used, 134217728.00 MB total
+[2016.10.29-16.55.43:532][174]LogMemory: 
+[2016.10.29-16.55.43:532][174]Allocator Stats for TBB: (not implemented)
+[2016.10.29-16.55.44:473][174]LogAIModule: Creating AISystem for world TutorialMap
+[2016.10.29-16.55.44:474][174]LogWorld: Game class is 'TutorialGM_C'
+[2016.10.29-16.55.44:506][174]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_TutorialMap.TutorialMap up for play (max tick rate 0) at 2016.10.29-17.55.44
+[2016.10.29-16.55.44:508][174]LogWorld: Bringing up level for play took: 0.031874
+[2016.10.29-16.55.44:509][174]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-16.55.44:548][174]LogLoad: Took 1.052714 seconds to LoadMap(/Game/VehicleAdvBP/Maps/TutorialMap)
+[2016.10.29-16.55.53:241][206]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.29-16.55.53:241][206]PIE: New page: PIE session: MenuLevel (29 Oct 2016 17:55:53)
+[2016.10.29-16.55.53:241][206]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel
+[2016.10.29-16.55.53:241][206]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000386s)
+[2016.10.29-16.55.53:242][206]LogAIModule: Creating AISystem for world MenuLevel
+[2016.10.29-16.55.53:242][206]LogPlayLevel: PIE: World Init took: (0.000394s)
+[2016.10.29-16.55.53:242][206]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/MenuLevel.MenuLevel to /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel (0.000937s)
+[2016.10.29-16.55.53:264][206]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-16.55.53:272][206]LogInit: FAudioDevice initialized.
+[2016.10.29-16.55.53:317][206]LogWorld: Game class is 'MainMneuGM_C'
+[2016.10.29-16.55.53:319][206]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel up for play (max tick rate 0) at 2016.10.29-17.55.53
+[2016.10.29-16.55.53:319][206]LogWorld: Bringing up level for play took: 0.000668
+[2016.10.29-16.55.53:321][206]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel 0.102
+[2016.10.29-16.55.55:750][497]LogNet: Browse: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-16.55.55:750][497]LogLoad: LoadMap: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-16.55.55:765][497]Cmd: MEM
+[2016.10.29-16.55.55:778][497]LogMemory: Platform Memory Stats for Windows
+[2016.10.29-16.55.55:778][497]LogMemory: Process Physical Memory: 978.64 MB used, 1685.23 MB peak
+[2016.10.29-16.55.55:778][497]LogMemory: Process Virtual Memory: 2669.28 MB used, 2736.67 MB peak
+[2016.10.29-16.55.55:778][497]LogMemory: Physical Memory: 7942.47 MB used, 16332.68 MB total
+[2016.10.29-16.55.55:778][497]LogMemory: Virtual Memory: 3553.43 MB used, 134217728.00 MB total
+[2016.10.29-16.55.55:778][497]LogMemory: 
+[2016.10.29-16.55.55:778][497]Allocator Stats for TBB: (not implemented)
+[2016.10.29-16.55.56:541][497]LogAIModule: Creating AISystem for world TutorialMap
+[2016.10.29-16.55.56:541][497]LogWorld: Game class is 'TutorialGM_C'
+[2016.10.29-16.55.56:571][497]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_TutorialMap.TutorialMap up for play (max tick rate 0) at 2016.10.29-17.55.56
+[2016.10.29-16.55.56:573][497]LogWorld: Bringing up level for play took: 0.029930
+[2016.10.29-16.55.56:574][497]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-16.55.56:574][497]LogLoad: Took 0.824793 seconds to LoadMap(/Game/VehicleAdvBP/Maps/TutorialMap)
+[2016.10.29-16.55.58:017][645]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-16.56.13:112][443]LogSavePackage: Save=30.05ms
+[2016.10.29-16.56.13:112][443]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM482580204792C935B66E2F93454DEA60.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.56.13:115][443]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.57.40:536][925]LogSavePackage: Save=34.19ms
+[2016.10.29-16.57.40:536][925]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM0793C57D4DC18133888A299492DA78B0.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.57.40:536][925]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.58.05:892][950]LogSavePackage: Save=29.81ms
+[2016.10.29-16.58.05:892][950]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM0A8F4B6845991D5617C2478312DE1EE5.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-16.58.05:893][950]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-16.58.40:010][ 36]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/MenuLevel' took 0.015
+[2016.10.29-16.58.40:012][ 36]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu] ([1] browsable assets)...
+[2016.10.29-16.58.40:012][ 36]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu]
+[2016.10.29-16.58.40:038][ 36]LogSavePackage: Save=15.47ms
+[2016.10.29-16.58.40:038][ 36]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu_Auto65FB76E654954A1F29AB88EBDF4EE96BD.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu_Auto6.uasset'
+[2016.10.29-16.58.40:039][ 36]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Autosaves/Game/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu_Auto6.uasset
+[2016.10.29-16.58.40:039][ 36]LogFileHelpers: Auto-saving content packages took 0.028
+[2016.10.29-16.59.28:444][840]LogSavePackage: Save=17.92ms
+[2016.10.29-16.59.28:444][840]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu56552EB14F7B0461A725B1914FF364AA.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.59.28:447][840]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.59.40:381][267]LogSavePackage: Save=15.98ms
+[2016.10.29-16.59.40:381][267]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialSubMenu176AE83049EADC569141289DC0D4704D.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset'
+[2016.10.29-16.59.40:383][267]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/TutorialSubMenu.uasset
+[2016.10.29-16.59.47:323][ 98]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.29-16.59.47:323][ 98]PIE: New page: PIE session: MenuLevel (29 Oct 2016 17:59:47)
+[2016.10.29-16.59.47:323][ 98]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel
+[2016.10.29-16.59.47:324][ 98]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000433s)
+[2016.10.29-16.59.47:324][ 98]LogAIModule: Creating AISystem for world MenuLevel
+[2016.10.29-16.59.47:324][ 98]LogPlayLevel: PIE: World Init took: (0.000438s)
+[2016.10.29-16.59.47:324][ 98]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/MenuLevel.MenuLevel to /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel (0.001029s)
+[2016.10.29-16.59.47:345][ 98]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-16.59.47:353][ 98]LogInit: FAudioDevice initialized.
+[2016.10.29-16.59.47:394][ 98]LogWorld: Game class is 'MainMneuGM_C'
+[2016.10.29-16.59.47:397][ 98]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel up for play (max tick rate 0) at 2016.10.29-17.59.47
+[2016.10.29-16.59.47:397][ 98]LogWorld: Bringing up level for play took: 0.000736
+[2016.10.29-16.59.47:398][ 98]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel 0.18
+[2016.10.29-16.59.49:184][312]LogNet: Browse: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-16.59.49:184][312]LogLoad: LoadMap: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-16.59.49:198][312]Cmd: MEM
+[2016.10.29-16.59.49:210][312]LogMemory: Platform Memory Stats for Windows
+[2016.10.29-16.59.49:210][312]LogMemory: Process Physical Memory: 952.22 MB used, 1685.23 MB peak
+[2016.10.29-16.59.49:210][312]LogMemory: Process Virtual Memory: 2673.13 MB used, 2750.91 MB peak
+[2016.10.29-16.59.49:210][312]LogMemory: Physical Memory: 7981.85 MB used, 16332.68 MB total
+[2016.10.29-16.59.49:210][312]LogMemory: Virtual Memory: 3534.25 MB used, 134217728.00 MB total
+[2016.10.29-16.59.49:210][312]LogMemory: 
+[2016.10.29-16.59.49:210][312]Allocator Stats for TBB: (not implemented)
+[2016.10.29-16.59.49:957][312]LogAIModule: Creating AISystem for world TutorialMap
+[2016.10.29-16.59.49:957][312]LogWorld: Game class is 'TutorialGM_C'
+[2016.10.29-16.59.49:987][312]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_TutorialMap.TutorialMap up for play (max tick rate 0) at 2016.10.29-17.59.49
+[2016.10.29-16.59.49:990][312]LogWorld: Bringing up level for play took: 0.029957
+[2016.10.29-16.59.49:990][312]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-16.59.49:991][312]LogLoad: Took 0.807070 seconds to LoadMap(/Game/VehicleAdvBP/Maps/TutorialMap)
+[2016.10.29-17.00.07:706][435]LogBlueprintUserMessages: [MovmentPhaseCol1_662] respawn with text sayuing retrey
+[2016.10.29-17.00.19:693][873]LogBlueprintUserMessages: [MovmentPhaseCol1_662] respawn with text sayuing retrey
+[2016.10.29-17.00.25:561][577]LogBlueprintUserMessages: [MovmentPhaseCol1_662] respawn with text sayuing retrey
+[2016.10.29-17.00.32:077][359]LogBlueprintUserMessages: [MovmentPhaseCol1_662] respawn with text sayuing retrey
+[2016.10.29-17.04.25:912][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallFunction_75 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_75
+[2016.10.29-17.04.25:912][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_75.EdGraphPin_212''
+[2016.10.29-17.04.25:913][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallFunction_123 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_123
+[2016.10.29-17.04.25:913][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_123.EdGraphPin_207''
+[2016.10.29-17.04.25:913][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallFunction_74 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_74
+[2016.10.29-17.04.25:913][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_74.EdGraphPin_202''
+[2016.10.29-17.04.25:913][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_Self_6.EdGraphPin_46''
+[2016.10.29-17.04.25:913][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallFunction_123 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_123
+[2016.10.29-17.04.25:913][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_123.EdGraphPin_210''
+[2016.10.29-17.04.25:913][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallArrayFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallArrayFunction_6 or K2Node_CallArrayFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallArrayFunction_6
+[2016.10.29-17.04.25:913][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallArrayFunction_6.EdGraphPin_220''
+[2016.10.29-17.04.25:913][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallFunction_123 or K2Node_CallFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallFunction_123
+[2016.10.29-17.04.25:914][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_123.EdGraphPin_209''
+[2016.10.29-17.04.25:914][842]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallArrayFunction /Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM:EventGraph.K2Node_CallArrayFunction_6 or K2Node_CallArrayFunction /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_CallArrayFunction_6
+[2016.10.29-17.04.25:914][842]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallArrayFunction_6.EdGraphPin_218''
+[2016.10.29-17.04.41:812][733]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-17.04.41:905][733]BlueprintEditorCompileResults: Info [0040.58] Compile of TutorialGM successful! [in 92 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-17.04.42:394][784]LogSavePackage: Save=33.22ms
+[2016.10.29-17.04.42:394][784]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM54D9331F48F3F639EE7492BA98A05029.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.04.42:396][784]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.05.03:903][357]LogSavePackage: Save=37.17ms
+[2016.10.29-17.05.03:903][357]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM9C64CB1D4B10D58B418066A19E5FFC43.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.05.03:905][357]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.05.12:290][355]LogSavePackage: Save=35.57ms
+[2016.10.29-17.05.12:290][355]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM5783A3E14073CDE6C799B989D156D0B8.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.05.12:291][355]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.06.50:163][229]LogSavePackage: Save=34.58ms
+[2016.10.29-17.06.50:163][229]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM62C5336B4B5E500CFB195DBA87FCA875.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.06.50:190][229]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.12.35:828][443]LogSavePackage: Save=35.07ms
+[2016.10.29-17.12.35:828][443]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMF87F365543083E6628A6E8A981927046.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.12.35:830][443]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.12.42:653][254]LogSavePackage: Save=36.33ms
+[2016.10.29-17.12.42:653][254]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM1BFD36F14A7C7E40050B5FA88C8316C9.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.12.42:655][254]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.12.45:298][568]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.29-17.12.45:299][568]PIE: New page: PIE session: MenuLevel (29 Oct 2016 18:12:45)
+[2016.10.29-17.12.45:299][568]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel
+[2016.10.29-17.12.45:299][568]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000426s)
+[2016.10.29-17.12.45:300][568]LogAIModule: Creating AISystem for world MenuLevel
+[2016.10.29-17.12.45:300][568]LogPlayLevel: PIE: World Init took: (0.000449s)
+[2016.10.29-17.12.45:300][568]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/MenuLevel.MenuLevel to /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel (0.001100s)
+[2016.10.29-17.12.45:324][568]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.29-17.12.45:333][568]LogInit: FAudioDevice initialized.
+[2016.10.29-17.12.45:376][568]LogWorld: Game class is 'MainMneuGM_C'
+[2016.10.29-17.12.45:378][568]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel.MenuLevel up for play (max tick rate 0) at 2016.10.29-18.12.45
+[2016.10.29-17.12.45:379][568]LogWorld: Bringing up level for play took: 0.000727
+[2016.10.29-17.12.45:380][568]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_MenuLevel 0.162
+[2016.10.29-17.12.48:442][935]LogNet: Browse: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-17.12.48:442][935]LogLoad: LoadMap: /Game/VehicleAdvBP/Maps/TutorialMap
+[2016.10.29-17.12.48:455][935]Cmd: MEM
+[2016.10.29-17.12.48:467][935]LogMemory: Platform Memory Stats for Windows
+[2016.10.29-17.12.48:467][935]LogMemory: Process Physical Memory: 956.49 MB used, 1685.23 MB peak
+[2016.10.29-17.12.48:467][935]LogMemory: Process Virtual Memory: 2698.73 MB used, 2767.78 MB peak
+[2016.10.29-17.12.48:467][935]LogMemory: Physical Memory: 7909.19 MB used, 16332.68 MB total
+[2016.10.29-17.12.48:467][935]LogMemory: Virtual Memory: 3548.04 MB used, 134217728.00 MB total
+[2016.10.29-17.12.48:467][935]LogMemory: 
+[2016.10.29-17.12.48:467][935]Allocator Stats for TBB: (not implemented)
+[2016.10.29-17.12.49:189][935]LogAIModule: Creating AISystem for world TutorialMap
+[2016.10.29-17.12.49:190][935]LogWorld: Game class is 'TutorialGM_C'
+[2016.10.29-17.12.49:219][935]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_TutorialMap.TutorialMap up for play (max tick rate 0) at 2016.10.29-18.12.49
+[2016.10.29-17.12.49:221][935]LogWorld: Bringing up level for play took: 0.029290
+[2016.10.29-17.12.49:222][935]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-17.12.49:223][935]LogLoad: Took 0.780980 seconds to LoadMap(/Game/VehicleAdvBP/Maps/TutorialMap)
+[2016.10.29-17.12.51:846][249]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.10.29-17.13.07:411][103]BlueprintLog: New page: Compile TutorialGM
+[2016.10.29-17.13.07:500][103]BlueprintEditorCompileResults: Info [0546.18] Compile of TutorialGM successful! [in 89 ms] (/Game/VehicleAdvBP/Blueprints/GameMode/TutorialGM.TutorialGM)
+[2016.10.29-17.13.08:354][198]LogSavePackage: Save=33.86ms
+[2016.10.29-17.13.08:354][198]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM75E70B404CCA4EDD5B72F89FB0253DF0.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.13.08:355][198]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.13.15:884][ 88]LogSavePackage: Save=37.58ms
+[2016.10.29-17.13.15:884][ 88]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMEB24EC63477814ABDFED689DC3582730.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.29-17.13.15:885][ 88]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.29-17.13.23:365][979]LogSavePackage: Save=6.67ms
+[2016.10.29-17.13.23:365][979]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/MenuLevel6B7C25DB41513AD5EC33FDA9D0297C64.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/MenuLevel.umap'
+[2016.10.29-17.13.23:366][979]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/MenuLevel.umap
+[2016.10.29-17.13.27:313][357]Cmd: QUIT_EDITOR
+[2016.10.29-17.13.28:230][357]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.10.29-17.13.28:265][357]LogExit: Preparing to exit.
+[2016.10.29-17.13.29:001][357]LogExit: Editor shut down
+[2016.10.29-17.13.29:002][357]LogExit: Transaction tracking system shut down
+[2016.10.29-17.13.30:412][357]LogObj: Freed 0b from 0 cluster array pools.
+[2016.10.29-17.13.30:413][357]LogExit: Object subsystem successfully closed.
+[2016.10.29-17.13.30:616][357]LogD3D11RHI: Shutdown
+[2016.10.29-17.13.30:624][357]LogD3D11RHI: CleanupD3DDevice
+[2016.10.29-17.13.30:824][357]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.10.29-17.13.32:505][357]LogModuleManager: Shutting down and abandoning module SequencerWidgets (217)
+[2016.10.29-17.13.32:505][357]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (216)
+[2016.10.29-17.13.32:505][357]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
+[2016.10.29-17.13.32:505][357]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (214)
+[2016.10.29-17.13.32:515][357]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (213)
+[2016.10.29-17.13.32:515][357]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.10.29-17.13.32:515][357]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.10.29-17.13.32:515][357]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.10.29-17.13.32:524][357]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.10.29-17.13.32:610][357]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.10.29-17.13.32:610][357]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.10.29-17.13.32:610][357]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.10.29-17.13.32:635][357]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.10.29-17.13.32:641][357]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.10.29-17.13.32:643][357]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.10.29-17.13.32:644][357]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.10.29-17.13.32:644][357]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.10.29-17.13.32:644][357]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.10.29-17.13.32:644][357]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.10.29-17.13.32:644][357]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.10.29-17.13.32:647][357]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.10.29-17.13.32:647][357]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.10.29-17.13.32:647][357]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.10.29-17.13.32:657][357]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.10.29-17.13.32:657][357]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.10.29-17.13.32:657][357]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.10.29-17.13.32:668][357]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.10.29-17.13.32:672][357]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.10.29-17.13.32:672][357]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.10.29-17.13.32:672][357]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.10.29-17.13.32:672][357]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.10.29-17.13.32:672][357]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.10.29-17.13.32:673][357]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.10.29-17.13.32:685][357]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.10.29-17.13.32:695][357]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.10.29-17.13.32:695][357]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.10.29-17.13.32:703][357]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.10.29-17.13.32:703][357]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.10.29-17.13.33:533][357]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.10.29-17.13.33:562][357]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.10.29-17.13.33:562][357]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.10.29-17.13.33:562][357]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.10.29-17.13.33:567][357]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.10.29-17.13.33:567][357]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.10.29-17.13.33:568][357]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.10.29-17.13.33:576][357]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.10.29-17.13.33:582][357]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.10.29-17.13.33:593][357]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.10.29-17.13.33:593][357]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.10.29-17.13.33:601][357]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.10.29-17.13.33:607][357]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.10.29-17.13.33:607][357]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.10.29-17.13.33:607][357]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.10.29-17.13.33:611][357]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.10.29-17.13.33:617][357]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.10.29-17.13.33:617][357]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.10.29-17.13.33:635][357]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.10.29-17.13.33:635][357]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.10.29-17.13.33:642][357]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.10.29-17.13.33:653][357]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.10.29-17.13.33:662][357]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.10.29-17.13.33:668][357]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.10.29-17.13.33:668][357]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.10.29-17.13.33:715][357]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.10.29-17.13.33:718][357]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.10.29-17.13.33:734][357]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.10.29-17.13.33:753][357]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.10.29-17.13.33:753][357]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.10.29-17.13.33:766][357]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.10.29-17.13.33:766][357]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.10.29-17.13.33:791][357]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.10.29-17.13.33:791][357]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.10.29-17.13.33:791][357]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.10.29-17.13.33:792][357]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.10.29-17.13.33:795][357]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.10.29-17.13.33:804][357]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.10.29-17.13.33:810][357]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.10.29-17.13.33:816][357]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.10.29-17.13.33:821][357]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.10.29-17.13.33:822][357]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.10.29-17.13.33:825][357]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.10.29-17.13.33:825][357]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.10.29-17.13.33:847][357]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.10.29-17.13.33:865][357]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.10.29-17.13.33:875][357]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.10.29-17.13.33:875][357]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.10.29-17.13.33:875][357]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.10.29-17.13.33:904][357]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.10.29-17.13.33:904][357]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.10.29-17.13.33:904][357]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.10.29-17.13.33:904][357]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.10.29-17.13.33:904][357]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.10.29-17.13.33:913][357]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.10.29-17.13.33:913][357]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.10.29-17.13.33:939][357]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.10.29-17.13.33:939][357]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.10.29-17.13.33:939][357]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.10.29-17.13.33:942][357]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.10.29-17.13.33:952][357]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.10.29-17.13.33:962][357]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.10.29-17.13.33:972][357]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.10.29-17.13.33:972][357]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.10.29-17.13.33:974][357]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.10.29-17.13.33:974][357]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.10.29-17.13.33:979][357]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.10.29-17.13.33:988][357]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.10.29-17.13.33:996][357]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.10.29-17.13.34:000][357]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.10.29-17.13.34:009][357]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.10.29-17.13.34:010][357]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.10.29-17.13.34:026][357]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.10.29-17.13.34:127][357]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.10.29-17.13.34:127][357]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.10.29-17.13.34:194][357]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.10.29-17.13.34:194][357]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.10.29-17.13.34:195][357]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.10.29-17.13.34:201][357]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.10.29-17.13.34:201][357]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.10.29-17.13.34:204][357]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.10.29-17.13.34:204][357]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.10.29-17.13.34:204][357]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.10.29-17.13.34:209][357]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.10.29-17.13.34:209][357]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.10.29-17.13.34:212][357]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.10.29-17.13.34:228][357]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.10.29-17.13.34:228][357]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.10.29-17.13.34:252][357]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.10.29-17.13.34:252][357]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.10.29-17.13.34:252][357]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.10.29-17.13.34:252][357]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.10.29-17.13.34:279][357]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.10.29-17.13.34:279][357]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.10.29-17.13.34:279][357]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.10.29-17.13.34:296][357]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.10.29-17.13.34:297][357]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.10.29-17.13.34:299][357]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.10.29-17.13.34:299][357]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.10.29-17.13.34:299][357]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.10.29-17.13.34:299][357]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.10.29-17.13.34:299][357]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.10.29-17.13.34:299][357]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.10.29-17.13.34:303][357]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.10.29-17.13.34:557][357]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.10.29-17.13.34:557][357]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.10.29-17.13.34:567][357]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.10.29-17.13.34:580][357]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.10.29-17.13.34:614][357]LogDerivedDataCache: Shutdown
+[2016.10.29-17.13.34:614][357]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.10.29-17.13.34:622][357]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.10.29-17.13.34:625][357]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.10.29-17.13.34:631][357]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.10.29-17.13.34:641][357]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.10.29-17.13.34:641][357]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.10.29-17.13.34:651][357]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.10.29-17.13.34:651][357]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.10.29-17.13.34:651][357]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.10.29-17.13.34:651][357]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.10.29-17.13.34:651][357]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.10.29-17.13.34:651][357]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.10.29-17.13.34:652][357]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.10.29-17.13.34:653][357]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.10.29-17.13.34:660][357]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.10.29-17.13.34:660][357]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.10.29-17.13.34:664][357]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.10.29-17.13.34:671][357]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.10.29-17.13.34:671][357]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.10.29-17.13.34:671][357]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.10.29-17.13.34:671][357]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.10.29-17.13.34:671][357]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.10.29-17.13.34:671][357]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.10.29-17.13.34:706][357]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.10.29-17.13.34:712][357]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.10.29-17.13.34:721][357]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.10.29-17.13.34:729][357]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.10.29-17.13.34:729][357]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.10.29-17.13.34:734][357]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.10.29-17.13.34:734][357]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.10.29-17.13.34:734][357]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.10.29-17.13.34:743][357]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.10.29-17.13.36:244][357]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.10.29-17.13.36:254][357]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.10.29-17.13.36:276][357]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.10.29-17.13.36:276][357]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.10.29-17.13.36:276][357]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.10.29-17.13.36:276][357]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.10.29-17.13.36:276][357]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.10.29-17.13.36:292][357]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.10.29-17.13.36:297][357]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.10.29-17.13.36:297][357]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.10.29-17.13.36:297][357]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.10.29-17.13.36:298][357]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.10.29-17.13.36:298][357]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.10.29-17.13.36:298][357]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.10.29-17.13.36:304][357]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.10.29-17.13.36:304][357]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.10.29-17.13.36:313][357]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.10.29-17.13.36:332][357]LogExit: Exiting.
+[2016.10.29-17.13.36:346][357]Log file closed, 10/29/16 18:13:36

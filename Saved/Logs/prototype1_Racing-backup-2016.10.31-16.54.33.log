@@ -1,0 +1,966 @@
+﻿Log file open, 10/31/16 16:31:23
+LogInit:Display: Running engine for game: prototype1_Racing
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1572006232) SRandInit(-1572006231).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.070523
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.10.31-16.31.23:772][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.31-16.31.23:772][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.31-16.31.23:781][  0]LogInit: Computer: KIYUMINIKURO
+[2016.10.31-16.31.23:781][  0]LogInit: User: MattDenny
+[2016.10.31-16.31.23:781][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.10.31-16.31.23:781][  0]LogInit: High frequency timer resolution =3.906250 MHz
+[2016.10.31-16.31.23:781][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.10.31-16.31.23:781][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.31-16.31.23:781][  0]LogMemory: Process Physical Memory: 190.77 MB used, 190.77 MB peak
+[2016.10.31-16.31.23:781][  0]LogMemory: Process Virtual Memory: 195.32 MB used, 195.32 MB peak
+[2016.10.31-16.31.23:781][  0]LogMemory: Physical Memory: 7610.64 MB used, 16332.68 MB total
+[2016.10.31-16.31.23:781][  0]LogMemory: Virtual Memory: 553.58 MB used, 134217728.00 MB total
+[2016.10.31-16.31.23:814][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2016.10.31-16.31.24:094][  0]LogD3D11RHI: D3D11 adapters:
+[2016.10.31-16.31.24:492][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2016.10.31-16.31.24:492][  0]LogD3D11RHI:       8145/0/8166 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.10.31-16.31.24:493][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.10.31-16.31.24:493][  0]LogD3D11RHI:       0/0/8166 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.10.31-16.31.24:493][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.10.31-16.31.24:520][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.10.31-16.31.24:520][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2016.10.31-16.31.24:521][  0]LogWindows: EnumDisplayDevices:
+[2016.10.31-16.31.24:521][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2016.10.31-16.31.24:521][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2016.10.31-16.31.24:521][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.31-16.31.24:521][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.31-16.31.24:521][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.10.31-16.31.24:521][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2016.10.31-16.31.24:521][  0]LogD3D11RHI:   Driver Version: 375.70 (internal:21.21.13.7570, unified:375.70)
+[2016.10.31-16.31.24:521][  0]LogD3D11RHI:      Driver Date: 10-25-2016
+[2016.10.31-16.31.24:521][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.10.31-16.31.24:908][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.31-16.31.24:942][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.10.31-16.31.24:942][  0]LogShaderCompilers: Guid format shader working directory is -39 characters bigger than the processId version (../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Intermediate/Shaders/WorkingDirectory/533444/).
+[2016.10.31-16.31.24:942][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MATTDE~1/AppData/Local/Temp/UnrealShaderWorkingDir/D71F882B4A8F7A542C30AE97487B3180/'.
+[2016.10.31-16.31.24:942][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.31-16.31.25:689][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.31-16.31.25:697][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.31-16.31.25:704][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.31-16.31.25:712][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.31-16.31.25:719][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.31-16.31.25:724][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.31-16.31.25:730][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.31-16.31.25:735][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.31-16.31.25:741][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.31-16.31.25:747][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.31-16.31.25:752][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.31-16.31.25:764][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.31-16.31.25:764][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.31-16.31.25:764][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.31-16.31.25:783][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.31-16.31.25:788][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.10.31-16.31.25:793][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.31-16.31.25:798][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.31-16.31.25:804][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.31-16.31.25:804][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.31-16.31.25:873][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.31-16.31.26:466][  0]LogDerivedDataCache: Loaded boot cache 0.59s 48MB C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.31-16.31.26:466][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.10.31-16.31.26:466][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.31-16.31.26:466][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.31-16.31.26:466][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.31-16.31.26:466][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.31-16.31.26:478][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.31-16.31.26:490][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Matt Denny/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.31-16.31.26:615][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.31-16.31.26:615][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.10.31-16.31.26:769][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.31-16.31.26:769][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.31-16.31.26:769][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.10.31-16.31.27:137][  0]LogAssetRegistry: FAssetRegistry took 0.0208 seconds to start up
+[2016.10.31-16.31.27:163][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.023413 seconds
+[2016.10.31-16.31.27:169][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.10.31-16.31.27:169][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.10.31-16.31.27:169][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.10.31-16.31.27:176][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.31-16.31.28:142][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.31-16.31.28:142][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.31-16.31.41:311][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.31-16.31.41:804][  0]SourceControl: Info Source control is disabled
+[2016.10.31-16.31.41:805][  0]SourceControl: Info Source control is disabled
+[2016.10.31-16.31.41:813][  0]SourceControl: Info Source control is disabled
+[2016.10.31-16.31.41:822][  0]SourceControl: Info Source control is disabled
+[2016.10.31-16.31.42:013][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2016.10.31-16.31.42:013][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2016.10.31-16.31.42:013][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2016.10.31-16.31.42:199][  0]LogEngine: Initializing Engine...
+[2016.10.31-16.31.42:199][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.31-16.31.42:200][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.31-16.31.42:345][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.31-16.31.42:352][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-16.31.42:364][  0]LogInit: FAudioDevice initialized.
+[2016.10.31-16.31.42:382][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.31-16.31.42:388][  0]LogInit: Texture streaming: Enabled
+[2016.10.31-16.31.42:432][  0]LogInit: Transaction tracking system initialized
+[2016.10.31-16.31.42:454][  0]BlueprintLog: New page: Editor Load
+[2016.10.31-16.31.42:558][  0]LocalizationService: Info Localization service is disabled
+[2016.10.31-16.31.42:764][  0]LogConsoleResponse:Display: 
+[2016.10.31-16.31.43:114][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.10.31-16.31.43:114][  0]LogCook:Display: Mobile HDR setting 1
+[2016.10.31-16.31.43:338][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/' took 0.02s
+[2016.10.31-16.31.43:355][  0]SourceControl: Info Source control is disabled
+[2016.10.31-16.31.43:355][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.31-16.31.43:356][  0]LightingResults: New page: Lighting Build
+[2016.10.31-16.31.43:358][  0]MapCheck: New page: Map Check
+[2016.10.31-16.31.43:358][  0]LightingResults: New page: Lighting Build
+[2016.10.31-16.31.43:440][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:440][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/PlayerVechilePROTO.uasset.
+[2016.10.31-16.31.43:440][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/PlayerVechilePROTO : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:440][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:440][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/PlayerVechilePROTO.uasset.
+[2016.10.31-16.31.43:440][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/PlayerVechilePROTO : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/PlayerVechilePROTO.uasset.
+[2016.10.31-16.31.43:441][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/PlayerVechilePROTO : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/PlayerVechilePROTO.uasset.
+[2016.10.31-16.31.43:441][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/PlayerVechilePROTO : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.Default__PlayerVechilePROTO_C Referenced by Default__PlayerVechilePROTO_C
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.Default__PlayerVechilePROTO_C Referenced by Default__PlayerVechilePROTO_C
+[2016.10.31-16.31.43:441][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO Referenced by PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO Referenced by PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:441][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:441][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:441][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:442][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:442][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:443][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:443][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:443][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:443][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:443][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:444][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:444][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:444][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:444][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:444][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:445][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:445][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:446][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO'
+[2016.10.31-16.31.43:446][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:446][  0]LogLinker:Warning: Can't find file for asset '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO' while loading ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset.
+[2016.10.31-16.31.43:446][  0]LoadErrors: Info Failed to load /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PlayerVechilePROTO_C Referenced by PlayerVechilePROTO_C
+[2016.10.31-16.31.43:446][  0]LoadErrors:Error: Error /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud : Can't find file for asset. /Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO
+[2016.10.31-16.31.43:454][  0]LogBlueprint:Warning: [VehicleAdvHud] CreatePinForVariable: 'Speed Display String' variable not found. Base class was probably changed.
+[2016.10.31-16.31.43:454][  0]LogBlueprint:Warning: [VehicleAdvHud] CreatePinForVariable: 'InReverseGear' variable not found. Base class was probably changed.
+[2016.10.31-16.31.43:454][  0]LogBlueprint:Warning: [VehicleAdvHud] CreatePinForVariable: 'GearDisplayColor' variable not found. Base class was probably changed.
+[2016.10.31-16.31.43:454][  0]LogBlueprint:Warning: [VehicleAdvHud] CreatePinForVariable: 'GearDisplayReverseColor' variable not found. Base class was probably changed.
+[2016.10.31-16.31.43:454][  0]LogBlueprint:Warning: [VehicleAdvHud] CreatePinForVariable: 'IsInCar' variable not found. Base class was probably changed.
+[2016.10.31-16.31.43:454][  0]LogBlueprint:Warning: [VehicleAdvHud] CreatePinForVariable: 'Gear Display String' variable not found. Base class was probably changed.
+[2016.10.31-16.31.43:456][  0]LogBlueprint:Warning: Compiler Warning Could not find a variable named "Gear Display String" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get Gear Display String 
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Could not find a variable named "IsInCar" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get IsInCar 
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Could not find a variable named "GearDisplayReverseColor" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get GearDisplayReverseColor 
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Could not find a variable named "GearDisplayColor" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get GearDisplayColor 
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Could not find a variable named "InReverseGear" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get InReverseGear 
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Could not find a variable named "Speed Display String" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get Speed Display String 
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Warning: Compiler Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error The property associated with  Gear Display String  could not be found
+[2016.10.31-16.31.43:457][  0]LogBlueprint:Error: Compiler Error The property associated with  Speed Display String  could not be found
+[2016.10.31-16.31.43:458][  0]LogBlueprint:Error: Compiler Error The property associated with  In Reverse Gear  could not be found
+[2016.10.31-16.31.43:458][  0]LogBlueprint:Error: Compiler Error The property associated with  Gear Display Color  could not be found
+[2016.10.31-16.31.43:458][  0]LogBlueprint:Error: Compiler Error The property associated with  Gear Display Reverse Color  could not be found
+[2016.10.31-16.31.43:458][  0]LogBlueprint:Error: Compiler Error The property associated with  Is in Car  could not be found
+[2016.10.31-16.31.43:461][  0]LogBlueprint:Warning: Compiler Warning [0020.36] Compile of VehicleAdvHud failed. 12 Fatal Issue(s) 12 Warning(s) [in 6 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.31.43:461][  0]LogBlueprint:Warning: Compiler Warning [0020.36] Compile of VehicleAdvHud failed. 12 Fatal Issue(s) 13 Warning(s) [in 0 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.31.43:461][  0]LogBlueprint:Warning: Compiler Warning [0020.36] Compile of VehicleAdvHud failed. 12 Fatal Issue(s) 14 Warning(s) [in 0 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.31.45:330][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-16.31.45:684][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.31-16.31.45:684][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.31-16.31.45:723][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 38.16ms to complete.
+[2016.10.31-16.31.45:723][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 2.368
+[2016.10.31-16.31.45:938][  0]LogCollectionManager: Loaded 0 collections in 0.001968 seconds
+[2016.10.31-16.31.45:979][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Collections/' took 0.01s
+[2016.10.31-16.31.45:979][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/Developers/MattDenny/Collections/' took 0.01s
+[2016.10.31-16.31.45:979][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/Collections/' took 0.01s
+[2016.10.31-16.31.45:979][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.10.31-16.31.45:985][  0]LogContentBrowser: Native class hierarchy populated in 0.0056 seconds. Added 2047 classes and 369 folders.
+[2016.10.31-16.31.45:988][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.10.31-16.31.45:989][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.10.31-16.31.45:989][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.10.31-16.31.45:993][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.10.31-16.31.46:593][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.10.31-16.31.46:596][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.10.31-16.31.46:643][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.10.31-16.31.46:657][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.10.31-16.31.46:682][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.10.31-16.31.46:682][  0]LogLoad: Full Startup: 23.58 seconds (BP compile: 0.26 seconds)
+[2016.10.31-16.31.46:682][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.10.31-16.31.46:682][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.10.31-16.31.47:021][  0]LogOcInput: OculusInput pre-init called
+[2016.10.31-16.31.47:039][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.10.31-16.31.47:087][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.10.31-16.31.47:360][  1]LogAssetRegistry: Asset discovery search completed in 20.2437 seconds
+[2016.10.31-16.31.47:360][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.10.31-16.31.47:360][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000014 seconds (updated 0 objects)
+[2016.10.31-16.31.47:689][  3]LogRenderer: Reallocating scene render targets to support 128x128 (Frame:1).
+[2016.10.31-16.33.31:512][521]LogRenderer: Reallocating scene render targets to support 1092x648 (Frame:2).
+[2016.10.31-16.33.51:399][861]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 111 classes and 0 folders.
+[2016.10.31-16.33.55:814][293]BlueprintLog: New page: Compile PlayerVechilePROTO
+[2016.10.31-16.33.56:156][293]BlueprintEditorCompileResults: Info [0153.06] Compile of PlayerVechilePROTO successful! [in 342 ms] (/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO)
+[2016.10.31-16.34.06:164][458]LogText:Warning: Failed to parse argument "GameModeName" as a number (using "0" as a fallback). Please check your format string for errors: "GameMode: Edit {GameModeName}".
+[2016.10.31-16.34.37:234][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_ComponentBoundEvent /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_turn_90_large2_Blueprint.AV_turn_90_large2_Blueprint:EventGraph.K2Node_ComponentBoundEvent_1 or K2Node_ComponentBoundEvent /Game/VehicleAdvBP/Blueprints/TrackWithBP/TrackPiece.TrackPiece:EventGraph.K2Node_ComponentBoundEvent_1
+[2016.10.31-16.34.37:234][ 15]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_turn_90_large2_Blueprint.AV_turn_90_large2_Blueprint:EventGraph.K2Node_ComponentBoundEvent_1.EdGraphPin_37) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud:EventGraph.K2Node_DynamicCast_8.EdGraphPin_203).  Import failed...
+[2016.10.31-16.34.37:234][ 15]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_ComponentBoundEvent_1.EdGraphPin_37''
+[2016.10.31-16.34.37:234][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_turn_90_large2_Blueprint.AV_turn_90_large2_Blueprint:EventGraph.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/MovingPlatform.MovingPlatform:EventGraph.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/TrackPiece.TrackPiece:EventGraph.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/TrackWithBP/TrackPiece.TrackPiece:EventGraph.K2Node_VariableSet_11.EdGraphPin_209) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud:EventGraph.K2Node_DynamicCast_8.EdGraphPin_204).  Import failed...
+[2016.10.31-16.34.37:235][ 15]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_11.EdGraphPin_209''
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_ComponentBoundEvent /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_turn_90_large2_Blueprint.AV_turn_90_large2_Blueprint:EventGraph.K2Node_ComponentBoundEvent_1 or K2Node_ComponentBoundEvent /Game/VehicleAdvBP/Blueprints/TrackWithBP/TrackPiece.TrackPiece:EventGraph.K2Node_ComponentBoundEvent_1
+[2016.10.31-16.34.37:235][ 15]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_turn_90_large2_Blueprint.AV_turn_90_large2_Blueprint:EventGraph.K2Node_ComponentBoundEvent_1.EdGraphPin_39) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud:EventGraph.K2Node_DynamicCast_8.EdGraphPin_206).  Import failed...
+[2016.10.31-16.34.37:235][ 15]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_ComponentBoundEvent_1.EdGraphPin_39''
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_turn_90_large2_Blueprint.AV_turn_90_large2_Blueprint:EventGraph.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/MovingPlatform.MovingPlatform:EventGraph.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/TrackPiece.TrackPiece:EventGraph.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/VehicleAdvBP/Blueprints/TrackWithBP/AV_ramp_big_4_Blueprint.AV_ramp_big_4_Blueprint:EventGraph.K2Node_VariableSet_11 or K2Node_VariableSet /Engine/Transient.PROTO_BP_Blueprint_0:UserConstructionScript.K2Node_VariableSet_11
+[2016.10.31-16.34.37:235][ 15]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/VehicleAdvBP/Blueprints/TrackWithBP/TrackPiece.TrackPiece:EventGraph.K2Node_VariableSet_11.EdGraphPin_213) from referencer (EdGraphPin /Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud:EventGraph.K2Node_DynamicCast_8.EdGraphPin_207).  Import failed...
+[2016.10.31-16.34.37:235][ 15]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_11.EdGraphPin_213''
+[2016.10.31-16.36.27:120][ 43]Cmd: TRANSACTION UNDO
+[2016.10.31-16.36.27:149][ 43]LogEditorTransaction: Undo Add Node
+[2016.10.31-16.36.52:022][  5]BlueprintLog: New page: Compile VehicleAdvHud
+[2016.10.31-16.36.52:033][  5]LogBlueprint:Warning: Compiler Warning Could not find a variable named "IsInCar" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get IsInCar 
+[2016.10.31-16.36.52:033][  5]LogBlueprint:Warning: Compiler Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:033][  5]LogBlueprint:Warning: Compiler Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:033][  5]LogBlueprint:Warning: Compiler Warning Could not find a variable named "Speed Display String" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get Speed Display String 
+[2016.10.31-16.36.52:033][  5]LogBlueprint:Warning: Compiler Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:033][  5]LogBlueprint:Warning: Compiler Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:034][  5]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.36.52:034][  5]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.36.52:034][  5]LogBlueprint:Error: Compiler Error The property associated with  Is in Car  could not be found
+[2016.10.31-16.36.52:034][  5]LogBlueprint:Error: Compiler Error The property associated with  Speed Display String  could not be found
+[2016.10.31-16.36.52:187][  5]LogBlueprint:Warning: Compiler Warning [0329.09] Compile of VehicleAdvHud failed. 4 Fatal Issue(s) 6 Warning(s) [in 165 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "IsInCar" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get IsInCar 
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "Speed Display String" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get Speed Display String 
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Error: Error The property associated with  Is in Car  could not be found
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Error: Error The property associated with  Speed Display String  could not be found
+[2016.10.31-16.36.52:187][  5]BlueprintEditorCompileResults:Warning: Warning [0329.09] Compile of VehicleAdvHud failed. 4 Fatal Issue(s) 6 Warning(s) [in 165 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.36.52:693][ 58]LogSavePackage: Save=26.85ms
+[2016.10.31-16.36.52:693][ 58]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvHud2B856EB54CA6024189AAE3B564F00649.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset'
+[2016.10.31-16.36.52:696][ 58]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset
+[2016.10.31-16.37.38:934][549]BlueprintLog: New page: Compile VehicleAdvHud
+[2016.10.31-16.37.38:946][549]LogBlueprint:Warning: Compiler Warning Could not find a variable named "IsInCar" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get IsInCar 
+[2016.10.31-16.37.38:946][549]LogBlueprint:Warning: Compiler Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.37.38:946][549]LogBlueprint:Warning: Compiler Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.37.38:947][549]LogBlueprint:Error: Compiler Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.37.38:947][549]LogBlueprint:Error: Compiler Error The property associated with  Is in Car  could not be found
+[2016.10.31-16.37.39:054][549]LogBlueprint:Warning: Compiler Warning [0375.95] Compile of VehicleAdvHud failed. 2 Fatal Issue(s) 3 Warning(s) [in 120 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.37.39:054][549]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "IsInCar" in 'VehicleAdvHud'.
+Make sure 'VehicleAdvHud' has been compiled for  Get IsInCar 
+[2016.10.31-16.37.39:054][549]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.37.39:054][549]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.10.31-16.37.39:054][549]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.10.31-16.37.39:054][549]BlueprintEditorCompileResults:Error: Error The property associated with  Is in Car  could not be found
+[2016.10.31-16.37.39:054][549]BlueprintEditorCompileResults:Warning: Warning [0375.95] Compile of VehicleAdvHud failed. 2 Fatal Issue(s) 3 Warning(s) [in 120 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.37.39:950][650]LogSavePackage: Save=24.50ms
+[2016.10.31-16.37.39:950][650]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvHudC77584284B0B3D0A8B03C7A0A7F34A4B.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset'
+[2016.10.31-16.37.39:952][650]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset
+[2016.10.31-16.38.15:194][839]BlueprintLog: New page: Compile VehicleAdvHud
+[2016.10.31-16.38.15:266][839]BlueprintEditorCompileResults: Info [0412.17] Compile of VehicleAdvHud successful! [in 72 ms] (/Game/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.VehicleAdvHud)
+[2016.10.31-16.38.15:600][873]LogSavePackage: Save=25.53ms
+[2016.10.31-16.38.15:600][873]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvHudD7F9CB9141CFA28497A29087D6C737A4.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset'
+[2016.10.31-16.38.15:602][873]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset
+[2016.10.31-16.38.21:399][554]LogSavePackage: Save=25.34ms
+[2016.10.31-16.38.21:399][554]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvHud26174F234E31EF2030A47BABD1BE88C2.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset'
+[2016.10.31-16.38.21:401][554]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset
+[2016.10.31-16.38.38:403][588]LogSavePackage: Save=25.96ms
+[2016.10.31-16.38.38:403][588]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvHud80BE23364C81BED0B087B49D2680728F.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset'
+[2016.10.31-16.38.38:404][588]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/VehicleAdvHud.uasset
+[2016.10.31-16.38.40:409][825]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.31-16.38.40:447][825]PIE: New page: PIE session: VehicleAdvExampleMap (31 Oct 2016 16:38:40)
+[2016.10.31-16.38.40:449][825]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2016.10.31-16.38.40:518][825]LogPlayLevel: PIE: StaticDuplicateObject took: (0.069075s)
+[2016.10.31-16.38.40:518][825]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-16.38.40:518][825]LogPlayLevel: PIE: World Init took: (0.000482s)
+[2016.10.31-16.38.40:518][825]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.069775s)
+[2016.10.31-16.38.40:538][825]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-16.38.40:547][825]LogInit: FAudioDevice initialized.
+[2016.10.31-16.38.40:661][825]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2016.10.31-16.38.40:676][825]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2016.10.31-16.38.40
+[2016.10.31-16.38.40:678][825]LogWorld: Bringing up level for play took: 0.014806
+[2016.10.31-16.38.40:696][825]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.31-16.38.40:733][825]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2016.10.31-16.38.40:766][825]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] PlayerVechilePROTO
+[2016.10.31-16.38.40:786][825]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.575
+[2016.10.31-16.38.57:622][814]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.31-16.38.57:622][814]PIE: New page: PIE session: VehicleAdvExampleMap (31 Oct 2016 16:38:57)
+[2016.10.31-16.38.57:622][814]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2016.10.31-16.38.57:659][814]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037064s)
+[2016.10.31-16.38.57:659][814]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-16.38.57:659][814]LogPlayLevel: PIE: World Init took: (0.000456s)
+[2016.10.31-16.38.57:660][814]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.037764s)
+[2016.10.31-16.38.57:679][814]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-16.38.57:687][814]LogInit: FAudioDevice initialized.
+[2016.10.31-16.38.57:728][814]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2016.10.31-16.38.57:743][814]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2016.10.31-16.38.57
+[2016.10.31-16.38.57:744][814]LogWorld: Bringing up level for play took: 0.014245
+[2016.10.31-16.38.57:745][814]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.31-16.38.57:746][814]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] PlayerVechilePROTO
+[2016.10.31-16.38.57:747][814]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.465
+[2016.10.31-16.39.00:504][135]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart4)
+[2016.10.31-16.39.22:483][758]Cmd: MODE GRID=0
+[2016.10.31-16.39.50:872][117]LogSavePackage: Save=46.78ms
+[2016.10.31-16.39.50:872][117]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvGameMode2D9962704FC16184B3DFF2B6A467FDF1.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.uasset'
+[2016.10.31-16.39.50:874][117]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.uasset
+[2016.10.31-16.40.23:855][ 41]Cmd: DELETE
+[2016.10.31-16.40.23:855][ 41]Cmd: ACTOR DELETE
+[2016.10.31-16.40.23:914][ 41]LogEditorActor: Deleted Actor: PlayerStart
+[2016.10.31-16.40.23:933][ 41]LogEditorActor: Deleted 1 Actors (0.044 secs)
+[2016.10.31-16.40.28:126][529]Cmd: DELETE
+[2016.10.31-16.40.28:126][529]Cmd: ACTOR DELETE
+[2016.10.31-16.40.28:132][529]LogEditorActor: Deleted Actor: PlayerStart
+[2016.10.31-16.40.28:146][529]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2016.10.31-16.40.33:824][204]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.10.31-16.40.36:294][497]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.10.31-16.40.37:951][695]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.10.31-16.40.42:495][237]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.31-16.40.42:495][237]PIE: New page: PIE session: VehicleAdvExampleMap (31 Oct 2016 16:40:42)
+[2016.10.31-16.40.42:495][237]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2016.10.31-16.40.42:610][237]LogPlayLevel: PIE: StaticDuplicateObject took: (0.114746s)
+[2016.10.31-16.40.42:610][237]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-16.40.42:611][237]LogPlayLevel: PIE: World Init took: (0.000500s)
+[2016.10.31-16.40.42:611][237]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.115460s)
+[2016.10.31-16.40.42:630][237]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-16.40.42:638][237]LogInit: FAudioDevice initialized.
+[2016.10.31-16.40.42:677][237]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2016.10.31-16.40.42:693][237]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2016.10.31-16.40.42
+[2016.10.31-16.40.42:694][237]LogWorld: Bringing up level for play took: 0.014365
+[2016.10.31-16.40.42:695][237]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.31-16.40.42:697][237]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] PlayerVechilePROTO
+[2016.10.31-16.40.42:697][237]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.486
+[2016.10.31-16.42.08:484][463]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.08:664][485]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.08:864][509]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.09:065][533]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.09:264][557]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.14:064][133]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.14:265][157]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.14:465][181]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.14:665][205]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.14:865][229]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.15:064][253]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.15:265][277]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.15:465][301]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.15:664][325]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.30:865][149]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.31:065][173]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.31:265][197]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.31:465][221]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.31:665][245]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.31:865][269]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.32:065][293]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.32:265][317]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.32:465][341]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.32:665][365]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.32:865][389]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.33:065][413]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.33:265][437]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.33:465][461]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.33:665][485]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.45:066][852]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.45:266][876]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.45:466][900]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.45:666][924]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.45:866][948]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.46:066][972]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.46:266][996]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.46:466][ 20]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.46:666][ 44]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.46:866][ 68]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.47:066][ 92]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.47:266][116]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.47:466][140]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.47:666][164]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.47:866][188]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.48:066][212]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.48:266][236]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.48:466][260]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.48:666][284]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.48:866][308]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.49:066][332]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.49:266][356]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.49:466][380]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.49:666][404]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.49:866][428]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.51:666][644]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.51:866][668]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.52:066][692]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.52:266][716]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.52:466][740]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.52:666][764]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.52:866][788]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.53:066][812]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.53:266][836]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.53:466][860]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.53:666][884]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.42.53:866][908]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.00:266][676]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.00:466][700]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.00:666][724]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.00:866][748]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.01:067][772]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.07:867][588]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.08:067][612]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.08:266][636]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.08:467][660]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.08:667][684]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.08:867][708]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.09:067][732]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.19:062][930]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.19:262][954]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.20:262][ 74]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.20:462][ 98]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.20:662][122]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.20:863][146]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.21:062][170]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.21:262][194]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.21:462][218]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.21:662][242]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.21:862][266]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.22:062][290]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.22:262][314]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.22:462][338]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.22:662][362]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.22:862][386]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.23:063][410]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.23:262][434]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.23:463][458]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.26:663][842]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.26:863][866]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.27:062][890]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.27:263][914]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.27:462][938]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.27:663][962]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.27:862][986]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.28:062][ 10]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.28:263][ 34]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.28:462][ 58]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.28:663][ 82]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.28:863][106]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.40:065][450]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.40:266][474]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.40:465][498]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.40:666][522]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.40:865][546]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.41:065][570]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.41:266][594]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.41:465][618]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.41:665][642]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.41:866][666]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.42:065][690]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.42:266][714]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.42:465][738]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.42:667][761]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.45:467][ 97]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.45:667][121]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.45:867][145]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.46:067][169]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.46:267][193]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.46:467][217]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.46:667][241]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.46:867][265]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.47:067][289]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.47:267][313]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.47:467][337]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.47:667][361]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.47:867][385]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.48:067][409]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.59:664][799]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.43.59:864][823]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.00:064][847]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.00:264][871]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.00:464][895]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.00:664][919]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.00:864][943]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.09:464][975]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.09:664][999]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.09:864][ 23]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.10:064][ 47]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.10:264][ 71]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.10:464][ 95]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.10:664][119]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.10:864][143]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.28:265][231]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.28:465][255]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.28:665][279]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.29:465][375]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.29:665][399]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.29:865][423]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.30:065][447]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.30:265][471]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.30:465][495]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.30:665][519]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.30:865][543]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.31:065][567]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.31:265][591]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.31:465][615]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.31:665][639]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.31:865][663]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.32:065][687]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.32:265][711]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.32:465][735]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.32:665][759]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.32:865][783]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.33:065][807]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.33:265][831]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.33:465][855]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.33:665][879]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.33:865][903]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.34:065][927]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.34:265][951]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.42:465][935]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.46:666][438]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.46:867][462]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.47:066][486]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.47:266][510]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.47:467][534]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.47:666][558]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.47:866][582]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.48:067][606]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.48:266][630]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.48:467][654]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.48:667][678]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.48:866][702]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.49:067][726]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.49:266][750]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.49:467][774]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.49:667][798]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.49:866][822]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.50:067][846]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.50:267][870]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.50:466][894]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.50:667][918]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.50:866][942]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.51:067][966]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.51:267][990]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.51:466][ 14]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.51:667][ 38]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.51:867][ 62]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.52:067][ 86]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.52:267][110]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.52:467][134]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.52:667][158]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.52:867][182]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.53:066][206]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.53:267][230]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.59:067][926]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.59:267][950]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.59:467][974]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.59:667][998]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.44.59:867][ 22]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.00:067][ 46]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.25:068][ 46]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.25:268][ 70]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.25:468][ 94]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.25:668][118]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.25:868][142]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.26:068][166]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.26:268][190]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.26:468][214]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.26:668][238]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.26:868][262]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.27:068][286]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.27:268][310]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.27:467][334]LogBlueprintUserMessages: [PlayerVechilePROTO_C_0] rocket
+[2016.10.31-16.45.45:435][476]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.31-16.45.45:436][476]PIE: New page: PIE session: VehicleAdvExampleMap (31 Oct 2016 16:45:45)
+[2016.10.31-16.45.45:436][476]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2016.10.31-16.45.45:563][476]LogPlayLevel: PIE: StaticDuplicateObject took: (0.127512s)
+[2016.10.31-16.45.45:564][476]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-16.45.45:564][476]LogPlayLevel: PIE: World Init took: (0.000469s)
+[2016.10.31-16.45.45:564][476]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.128186s)
+[2016.10.31-16.45.45:582][476]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-16.45.45:591][476]LogInit: FAudioDevice initialized.
+[2016.10.31-16.45.45:638][476]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2016.10.31-16.45.45:656][476]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2016.10.31-16.45.45
+[2016.10.31-16.45.45:657][476]LogWorld: Bringing up level for play took: 0.015864
+[2016.10.31-16.45.45:657][476]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.31-16.45.45:659][476]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] PlayerVechilePROTO
+[2016.10.31-16.45.45:659][476]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.552
+[2016.10.31-16.45.49:491][926]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.10.31-16.45.55:006][577]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.10.31-16.45.56:127][709]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.31-16.45.56:127][709]PIE: New page: PIE session: VehicleAdvExampleMap (31 Oct 2016 16:45:56)
+[2016.10.31-16.45.56:127][709]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2016.10.31-16.45.56:162][709]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034612s)
+[2016.10.31-16.45.56:162][709]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-16.45.56:162][709]LogPlayLevel: PIE: World Init took: (0.000412s)
+[2016.10.31-16.45.56:162][709]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.035231s)
+[2016.10.31-16.45.56:182][709]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-16.45.56:190][709]LogInit: FAudioDevice initialized.
+[2016.10.31-16.45.56:233][709]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2016.10.31-16.45.56:251][709]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2016.10.31-16.45.56
+[2016.10.31-16.45.56:253][709]LogWorld: Bringing up level for play took: 0.017818
+[2016.10.31-16.45.56:254][709]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.31-16.45.56:255][709]LogBlueprintUserMessages: [VehicleAdvGameMode_C_0] PlayerVechilePROTO
+[2016.10.31-16.45.56:256][709]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.044
+[2016.10.31-16.46.27:416][347]LogSavePackage: Save=560.92ms
+[2016.10.31-16.46.27:416][347]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvExampleMapFC033418460C1DC8750877823EF2C7AA.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
+[2016.10.31-16.46.27:419][347]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2016.10.31-16.47.01:357][366]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Coll' in BlueprintGeneratedClass 'REINST_RerightPhaseCol2_C_172' (it may have been removed)
+[2016.10.31-16.47.01:357][366]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Cube' in BlueprintGeneratedClass 'REINST_RerightPhaseCol2_C_172' (it may have been removed)
+[2016.10.31-16.47.01:368][366]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Cube' in BlueprintGeneratedClass 'REINST_MovmentPhaseCol1_C_175' (it may have been removed)
+[2016.10.31-16.47.01:368][366]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_MovmentPhaseCol1_C_175' (it may have been removed)
+[2016.10.31-16.47.15:105][911]LogSavePackage: Save=37.58ms
+[2016.10.31-16.47.15:105][911]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGM340DBE9842EB7A08AD3470BDBC760C83.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.31-16.47.15:107][911]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.31-16.48.12:799][691]SourceControl: Info Source control is disabled
+[2016.10.31-16.54.22:026][389]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.10.31-16.54.22:073][389]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.10.31-16.54.22:127][389]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.10.31-16.54.22:168][389]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.10.31-16.54.22:324][390]Cmd: QUIT_EDITOR
+[2016.10.31-16.54.22:578][390]LogExit: Preparing to exit.
+[2016.10.31-16.54.23:122][390]LogExit: Editor shut down
+[2016.10.31-16.54.23:123][390]LogExit: Transaction tracking system shut down
+[2016.10.31-16.54.23:241][390]LogObj: Freed 0b from 0 cluster array pools.
+[2016.10.31-16.54.23:241][390]LogExit: Object subsystem successfully closed.
+[2016.10.31-16.54.23:258][390]LogD3D11RHI: Shutdown
+[2016.10.31-16.54.23:258][390]LogD3D11RHI: CleanupD3DDevice
+[2016.10.31-16.54.23:305][390]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.10.31-16.54.23:314][390]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (216)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (214)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (213)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.10.31-16.54.23:316][390]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.10.31-16.54.23:317][390]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.10.31-16.54.24:306][390]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.10.31-16.54.24:349][390]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.10.31-16.54.24:583][390]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.10.31-16.54.24:584][390]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.10.31-16.54.24:585][390]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.10.31-16.54.24:585][390]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.10.31-16.54.24:585][390]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.10.31-16.54.24:686][390]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.10.31-16.54.24:688][390]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.10.31-16.54.24:875][390]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.10.31-16.54.24:875][390]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.10.31-16.54.24:875][390]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.10.31-16.54.24:875][390]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.10.31-16.54.24:884][390]LogDerivedDataCache: Shutdown
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.10.31-16.54.24:884][390]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.10.31-16.54.28:388][390]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.10.31-16.54.28:388][390]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.10.31-16.54.28:388][390]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.10.31-16.54.28:388][390]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.10.31-16.54.28:389][390]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.10.31-16.54.28:389][390]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.10.31-16.54.28:389][390]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.10.31-16.54.28:390][390]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.10.31-16.54.28:391][390]LogExit: Exiting.
+[2016.10.31-16.54.28:392][390]Log file closed, 10/31/16 16:54:28

@@ -1,0 +1,576 @@
+﻿Log file open, 10/31/16 11:07:52
+LogInit:Display: Running engine for game: prototype1_Racing
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-96003869) SRandInit(-96003868).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.259438
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.10.31-11.07.52:669][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.31-11.07.52:669][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.31-11.07.52:723][  0]LogInit: Computer: KIYUMINIKURO
+[2016.10.31-11.07.52:723][  0]LogInit: User: MattDenny
+[2016.10.31-11.07.52:723][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.10.31-11.07.52:723][  0]LogInit: High frequency timer resolution =3.906250 MHz
+[2016.10.31-11.07.52:724][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.10.31-11.07.52:724][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.31-11.07.52:724][  0]LogMemory: Process Physical Memory: 190.47 MB used, 190.47 MB peak
+[2016.10.31-11.07.52:724][  0]LogMemory: Process Virtual Memory: 195.30 MB used, 195.30 MB peak
+[2016.10.31-11.07.52:724][  0]LogMemory: Physical Memory: 8058.34 MB used, 16332.68 MB total
+[2016.10.31-11.07.52:724][  0]LogMemory: Virtual Memory: 553.58 MB used, 134217728.00 MB total
+[2016.10.31-11.07.53:457][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2016.10.31-11.07.53:834][  0]LogD3D11RHI: D3D11 adapters:
+[2016.10.31-11.07.54:374][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2016.10.31-11.07.54:374][  0]LogD3D11RHI:       8145/0/8166 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.10.31-11.07.54:375][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.10.31-11.07.54:375][  0]LogD3D11RHI:       0/0/8166 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.10.31-11.07.54:375][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.10.31-11.07.54:399][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.10.31-11.07.54:399][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2016.10.31-11.07.54:399][  0]LogWindows: EnumDisplayDevices:
+[2016.10.31-11.07.54:399][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2016.10.31-11.07.54:399][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2016.10.31-11.07.54:400][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.31-11.07.54:400][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2016.10.31-11.07.54:400][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.10.31-11.07.54:400][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2016.10.31-11.07.54:400][  0]LogD3D11RHI:   Driver Version: 375.70 (internal:21.21.13.7570, unified:375.70)
+[2016.10.31-11.07.54:400][  0]LogD3D11RHI:      Driver Date: 10-25-2016
+[2016.10.31-11.07.54:400][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.10.31-11.07.54:782][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.31-11.07.54:848][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.10.31-11.07.54:848][  0]LogShaderCompilers: Guid format shader working directory is -39 characters bigger than the processId version (../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Intermediate/Shaders/WorkingDirectory/461024/).
+[2016.10.31-11.07.54:849][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MATTDE~1/AppData/Local/Temp/UnrealShaderWorkingDir/D120791E4B3AEB68263219A7C1DB3517/'.
+[2016.10.31-11.07.54:849][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.31-11.07.57:353][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.31-11.07.57:360][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.31-11.07.57:367][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.31-11.07.57:374][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.31-11.07.57:382][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.31-11.07.57:389][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.31-11.07.57:395][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.31-11.07.57:401][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.31-11.07.57:406][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.31-11.07.57:412][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.31-11.07.57:418][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.31-11.07.57:430][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.31-11.07.57:430][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.31-11.07.57:431][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.31-11.07.57:500][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.31-11.07.57:505][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.10.31-11.07.57:510][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.31-11.07.57:515][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.31-11.07.57:539][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.31-11.07.57:539][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.31-11.07.58:291][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.31-11.07.58:854][  0]LogDerivedDataCache: Loaded boot cache 0.56s 48MB C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.31-11.07.58:854][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.10.31-11.07.58:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.31-11.07.58:855][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.31-11.07.58:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.31-11.07.58:855][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.31-11.07.58:902][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.31-11.07.58:913][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Matt Denny/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.31-11.08.05:454][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.31-11.08.05:454][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.10.31-11.08.05:682][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.31-11.08.05:682][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.31-11.08.05:682][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.10.31-11.08.06:209][  0]LogAssetRegistry: FAssetRegistry took 0.0210 seconds to start up
+[2016.10.31-11.08.06:237][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.025179 seconds
+[2016.10.31-11.08.06:241][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.10.31-11.08.06:241][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.10.31-11.08.06:241][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.10.31-11.08.06:249][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.31-11.08.07:123][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.31-11.08.07:123][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.31-11.08.20:561][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.31-11.08.21:080][  0]SourceControl: Info Source control is disabled
+[2016.10.31-11.08.21:081][  0]SourceControl: Info Source control is disabled
+[2016.10.31-11.08.21:089][  0]SourceControl: Info Source control is disabled
+[2016.10.31-11.08.21:098][  0]SourceControl: Info Source control is disabled
+[2016.10.31-11.08.21:291][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2016.10.31-11.08.21:291][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2016.10.31-11.08.21:291][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2016.10.31-11.08.21:533][  0]LogEngine: Initializing Engine...
+[2016.10.31-11.08.21:581][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.31-11.08.21:582][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.31-11.08.21:751][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.31-11.08.21:763][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.31-11.08.21:776][  0]LogInit: FAudioDevice initialized.
+[2016.10.31-11.08.21:795][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Matt Denny/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.31-11.08.21:800][  0]LogInit: Texture streaming: Enabled
+[2016.10.31-11.08.21:995][  0]LogInit: Transaction tracking system initialized
+[2016.10.31-11.08.22:019][  0]BlueprintLog: New page: Editor Load
+[2016.10.31-11.08.22:127][  0]LocalizationService: Info Localization service is disabled
+[2016.10.31-11.08.22:337][  0]LogConsoleResponse:Display: 
+[2016.10.31-11.08.23:003][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.10.31-11.08.23:003][  0]LogCook:Display: Mobile HDR setting 1
+[2016.10.31-11.08.23:785][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/' took 0.02s
+[2016.10.31-11.08.23:835][  0]SourceControl: Info Source control is disabled
+[2016.10.31-11.08.23:835][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.31-11.08.24:002][  0]LightingResults: New page: Lighting Build
+[2016.10.31-11.08.24:005][  0]MapCheck: New page: Map Check
+[2016.10.31-11.08.24:005][  0]LightingResults: New page: Lighting Build
+[2016.10.31-11.08.32:903][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2016.10.31-11.08.34:520][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.31-11.08.34:632][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.31-11.08.34:692][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 59.125ms to complete.
+[2016.10.31-11.08.34:692][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 10.856
+[2016.10.31-11.08.34:974][  0]LogCollectionManager: Loaded 0 collections in 0.002339 seconds
+[2016.10.31-11.08.35:018][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/Collections/' took 0.01s
+[2016.10.31-11.08.35:018][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/Developers/MattDenny/Collections/' took 0.01s
+[2016.10.31-11.08.35:018][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/Collections/' took 0.01s
+[2016.10.31-11.08.35:018][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.10.31-11.08.35:024][  0]LogContentBrowser: Native class hierarchy populated in 0.0066 seconds. Added 2047 classes and 369 folders.
+[2016.10.31-11.08.35:028][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.10.31-11.08.35:028][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.10.31-11.08.35:028][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.10.31-11.08.35:034][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.10.31-11.08.35:839][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.10.31-11.08.35:844][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.10.31-11.08.35:981][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.10.31-11.08.36:031][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.10.31-11.08.36:057][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.10.31-11.08.36:057][  0]LogLoad: Full Startup: 46.50 seconds (BP compile: 0.40 seconds)
+[2016.10.31-11.08.36:057][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.10.31-11.08.36:057][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.10.31-11.08.36:396][  0]LogOcInput: OculusInput pre-init called
+[2016.10.31-11.08.36:415][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.10.31-11.08.36:642][  0]LogRenderer: Reallocating scene render targets to support 1128x648 (Frame:2).
+[2016.10.31-11.08.36:696][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.10.31-11.08.36:806][  1]LogAssetRegistry: Asset discovery search completed in 30.6184 seconds
+[2016.10.31-11.08.36:806][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.10.31-11.08.36:806][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2016.10.31-11.09.26:959][152]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (AV_bump_wave_4)
+[2016.10.31-11.09.28:075][259]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkyShereBlueprint)
+[2016.10.31-11.13.46:947][580]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Coll' in BlueprintGeneratedClass 'REINST_RerightPhaseCol2_C_122' (it may have been removed)
+[2016.10.31-11.13.46:947][580]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Cube' in BlueprintGeneratedClass 'REINST_RerightPhaseCol2_C_122' (it may have been removed)
+[2016.10.31-11.13.46:958][580]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Cube' in BlueprintGeneratedClass 'REINST_MovmentPhaseCol1_C_125' (it may have been removed)
+[2016.10.31-11.13.46:958][580]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_MovmentPhaseCol1_C_125' (it may have been removed)
+[2016.10.31-11.13.47:279][580]LogAIModule: Creating AISystem for world TutorialMap
+[2016.10.31-11.13.47:358][580]Cmd: MAP LOAD FILE="../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Maps/TutorialMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.31-11.13.47:358][580]LightingResults: New page: Lighting Build
+[2016.10.31-11.13.47:358][580]LoadErrors: New page: Loading map: TutorialMap.umap
+[2016.10.31-11.13.47:417][580]MapCheck: New page: Map Check
+[2016.10.31-11.13.47:417][580]LightingResults: New page: Lighting Build
+[2016.10.31-11.13.47:514][580]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.31-11.13.47:534][580]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.31-11.13.47:575][580]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 40.877ms to complete.
+[2016.10.31-11.13.47:575][580]LogFileHelpers: Loading map 'TutorialMap' took 0.217
+[2016.10.31-11.13.47:635][581]Cmd: UpdateLandscapeEditorData
+[2016.10.31-11.14.27:941][415]LogEditorViewport: Clicking on Actor (LMB): ParentPlayerSpawnPoint_C (ParentPlayerSpawnPoint)
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:DropFireBalls.K2Node_FunctionEntry_2555' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:OverlapptedColl.K2Node_FunctionEntry_149' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:ReWritevECHILE.K2Node_FunctionEntry_154' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:UnlocktedRocket.K2Node_FunctionEntry_892' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:Update HUD Strings.K2Node_FunctionEntry_151' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:211][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:Update Physics Material.K2Node_FunctionEntry_152' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:UseRocketPowerUp.K2Node_FunctionEntry_1096' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO:MovementDispacher.K2Node_FunctionEntry_72' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Damge' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_32' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_43' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ExecuteUbergraph_PlayerVechilePROTO' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Update HUD Strings.CurrentGear' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Setup Incar HUD.PlayerHUD' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:UserConstructionScript' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ReceiveTick' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ReceiveBeginPlay' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ReceiveRadialDamage' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Cone' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Scene1' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Arrow' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:InternalCamera' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ChaseCamera' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Scene' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:EngineSound' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:InCarGear' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:InCarSpeed' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:SpringArm' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:bIsLowFriction' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:IsInCar' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:GearDisplayColor' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:GearDisplayReverseColor' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Speed Display String' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Gear Display String' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:InReverseGear' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:IsInCar_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:OverlapptedColl' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:HasGlidePowerUp' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:NewVar_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:NewMass' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:IsUpgradeUnlockted' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:isRocketPressted' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:rocket val' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:IsPlayerOnTrack' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:MovementDispacher' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:WSmovment' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ADmovment' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:CameraMovement' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:Handbrake' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.PlayerVechilePROTO_C:ReWrite?' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ReWrite?' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Handbrake' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:CameraMovement' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ADmovment' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:WSmovment' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:MovementDispacher' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:IsPlayerOnTrack' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:rocket val' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:isRocketPressted' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:IsUpgradeUnlockted' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:NewMass' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:NewVar_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:HasGlidePowerUp' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:OverlapptedColl' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:IsInCar_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:InReverseGear' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Gear Display String' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Speed Display String' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:GearDisplayReverseColor' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:GearDisplayColor' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:IsInCar' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:bIsLowFriction' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:SpringArm' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:InCarSpeed' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:InCarGear' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:212][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:EngineSound' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Scene' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ChaseCamera' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:InternalCamera' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Arrow' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Scene1' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Cone' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ReceiveRadialDamage' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ReceiveBeginPlay' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ReceiveTick' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:UserConstructionScript' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Setup Incar HUD.PlayerHUD' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Update HUD Strings.CurrentGear' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:ExecuteUbergraph_PlayerVechilePROTO' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_43' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_32' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C:Damge' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:213][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.SKEL_PlayerVechilePROTO_C' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.PlayerControllerPROTO_C' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.PlayerControllerPROTO:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.PlayerControllerPROTO_C:ExecuteUbergraph_PlayerControllerPROTO' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.PlayerControllerPROTO_C:UserConstructionScript' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.PlayerControllerPROTO_C:PlayerID' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.PlayerControllerPROTO_C:pause menu' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.SKEL_PlayerControllerPROTO_C:pause menu' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.SKEL_PlayerControllerPROTO_C:PlayerID' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.SKEL_PlayerControllerPROTO_C:UserConstructionScript' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.SKEL_PlayerControllerPROTO_C:ExecuteUbergraph_PlayerControllerPROTO' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:218][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.SKEL_PlayerControllerPROTO_C' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/PlayerControllerPROTO.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint_C:UserConstructionScript' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint_C:player spawnponit' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint_C:Arrow' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint_C:DefaultSceneRoot' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint_C' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint:EventGraph.K2Node_Event_0' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint:EventGraph.K2Node_Event_1' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.ParentPlayerSpawnPoint:EventGraph.K2Node_Event_2' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:223][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.SKEL_ParentPlayerSpawnPoint_C:DefaultSceneRoot' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:224][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.SKEL_ParentPlayerSpawnPoint_C:Arrow' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:224][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.SKEL_ParentPlayerSpawnPoint_C:player spawnponit' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:224][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.SKEL_ParentPlayerSpawnPoint_C:UserConstructionScript' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:224][748]LogMetaData: Removing '/Game/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.SKEL_ParentPlayerSpawnPoint_C' ref from Metadata '/Game/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.PackageMetaData'
+[2016.10.31-11.14.56:446][748]LogSavePackage: Save=178.44ms
+[2016.10.31-11.14.56:446][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/PlayerVechilePROTOB698D04740196F6A7A0A52B735BD59CD.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.uasset'
+[2016.10.31-11.14.56:446][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.uasset
+[2016.10.31-11.14.56:515][748]LogSavePackage: Save=6.69ms
+[2016.10.31-11.14.56:515][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/PlayerVechilePROTO43FFC68A47A427C782A779A3158CEDAC.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.uasset'
+[2016.10.31-11.14.56:517][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Player/PlayerVechilePROTO.uasset
+[2016.10.31-11.14.56:536][748]LogSavePackage: Save=13.02ms
+[2016.10.31-11.14.56:536][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/PlayerControllerPROTO8680ABB64B132D5E534C9AA564373585.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.uasset'
+[2016.10.31-11.14.56:538][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/PlayerControllerPROTO.uasset
+[2016.10.31-11.14.56:553][748]LogSavePackage: Save=9.03ms
+[2016.10.31-11.14.56:553][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/ParentPlayerSpawnPointFAC41C4F430E25DBC0A963A7FCF4DDDB.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.uasset'
+[2016.10.31-11.14.56:554][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/ParentPlayerSpawnPoint.uasset
+[2016.10.31-11.14.56:590][748]LogSavePackage: Save=21.86ms
+[2016.10.31-11.14.56:590][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/ParentPlayerSpawnPoint440961F84A3033D233D85792BC225077.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.uasset'
+[2016.10.31-11.14.56:592][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Player/ParentPlayerSpawnPoint.uasset
+[2016.10.31-11.14.56:755][748]LogSavePackage: Save=39.48ms
+[2016.10.31-11.14.56:755][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/TutorialGMFF50B57747F76E79E2C5E6899948D7E3.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset'
+[2016.10.31-11.14.56:756][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/TutorialGM.uasset
+[2016.10.31-11.14.56:797][748]LogSavePackage: Save=26.97ms
+[2016.10.31-11.14.56:797][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/VehicleAdvGameMode6B7798964608D520A7F3B1A132BF9144.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.uasset'
+[2016.10.31-11.14.56:798][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/GameMode/VehicleAdvGameMode.uasset
+[2016.10.31-11.14.56:837][748]LogSavePackage: Save=24.98ms
+[2016.10.31-11.14.56:837][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/MainMenu0C1BB2514E5A0EBA221F01B4E42575B5.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/MainMenu.uasset'
+[2016.10.31-11.14.56:838][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/MainMenu.uasset
+[2016.10.31-11.14.56:858][748]LogSavePackage: Save=8.86ms
+[2016.10.31-11.14.56:858][748]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/PlayerUi38C125574CDE252BAFDAA6AD483066BD.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/PlayerUi.uasset'
+[2016.10.31-11.14.56:872][748]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/MenuAndUI/PlayerUi.uasset
+[2016.10.31-11.15.10:597][ 54]LogSavePackage: Save=141.33ms
+[2016.10.31-11.15.10:597][ 54]LogSavePackage: Moving '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Saved/PlayerVechilePROTO4D4B2D2848DF8728E1D07B9C7A452CC7.tmp' to '../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.uasset'
+[2016.10.31-11.15.10:600][ 54]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Matt Denny/Desktop/3D Enigines/University/SuperSoapBoxAlpha0.1/Content/VehicleAdvBP/Blueprints/Players/PlayerVechilePROTO.uasset
+[2016.10.31-11.15.28:333][127]Cmd: QUIT_EDITOR
+[2016.10.31-11.15.28:353][127]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.10.31-11.15.28:373][127]LogExit: Preparing to exit.
+[2016.10.31-11.15.28:880][127]LogExit: Editor shut down
+[2016.10.31-11.15.28:880][127]LogExit: Transaction tracking system shut down
+[2016.10.31-11.15.29:020][127]LogObj: Freed 0b from 0 cluster array pools.
+[2016.10.31-11.15.29:020][127]LogExit: Object subsystem successfully closed.
+[2016.10.31-11.15.29:037][127]LogD3D11RHI: Shutdown
+[2016.10.31-11.15.29:037][127]LogD3D11RHI: CleanupD3DDevice
+[2016.10.31-11.15.29:093][127]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.10.31-11.15.29:102][127]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (214)
+[2016.10.31-11.15.29:102][127]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (213)
+[2016.10.31-11.15.29:102][127]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.10.31-11.15.29:102][127]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.10.31-11.15.29:102][127]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.10.31-11.15.29:102][127]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.10.31-11.15.29:103][127]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.10.31-11.15.29:104][127]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.10.31-11.15.29:104][127]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.10.31-11.15.29:104][127]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.10.31-11.15.29:104][127]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.10.31-11.15.29:539][127]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.10.31-11.15.29:540][127]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.10.31-11.15.29:582][127]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.10.31-11.15.29:655][127]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.10.31-11.15.29:655][127]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.10.31-11.15.29:655][127]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.10.31-11.15.29:656][127]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.10.31-11.15.29:657][127]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.10.31-11.15.29:657][127]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.10.31-11.15.29:657][127]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.10.31-11.15.29:758][127]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.10.31-11.15.29:759][127]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.10.31-11.15.29:761][127]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.10.31-11.15.29:984][127]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.10.31-11.15.29:984][127]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.10.31-11.15.29:984][127]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.10.31-11.15.29:984][127]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.10.31-11.15.30:067][127]LogDerivedDataCache: Shutdown
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.10.31-11.15.30:067][127]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.10.31-11.15.30:068][127]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.10.31-11.15.31:569][127]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.10.31-11.15.31:570][127]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.10.31-11.15.31:571][127]LogExit: Exiting.
+[2016.10.31-11.15.31:572][127]Log file closed, 10/31/16 11:15:31
